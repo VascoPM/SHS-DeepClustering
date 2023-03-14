@@ -6,6 +6,7 @@
 # WHAT TO TRY:
 # Make a CNN architecture with Conv blocks (Conv, BN, Maxpool), based on Books' advice
 # Make a CNN with Conv1D only, with strides like: https://xifengguo.github.io/papers/ICONIP17-DCEC.pdf
+# Make a CNN with a Conv embeded space: https://arxiv.org/pdf/1805.10795v1.pdf
 
 from tensorflow import keras
 from tensorflow.keras.layers import Dense, Input, Conv1D, Conv1DTranspose, Activation, BatchNormalization, MaxPool1D, Flatten, Reshape
