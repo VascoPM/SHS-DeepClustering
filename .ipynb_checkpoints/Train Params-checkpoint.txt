@@ -1,0 +1,4 @@
+Fix Activation Function -> RELU:
+Most architecture presume the Activation function is RELU.
+While it may be sub-optimal, it should be good enough and has good literature back-up.
+Doing so will reduce number of variables for sweeps.
