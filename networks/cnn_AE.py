@@ -2,7 +2,14 @@
 # Understanding Deep Learning (Chapter:7.6.2 Convolutional Autoencoder)
 # Hands-on-Machine-Learning 2nd Ed
 
-#
+ # Hands-on-ML inputs:
+# kernel size: small kernels better (e.g., 3), maybe first layer larger kernel ok since there's few input channels
+# N filters: Increase deeper it goes, as there are more patterns the higher the abstraction 
+
+# Understanding Deep Learning:
+# (Decoder) Don't used Conv1D or Pool layers: these layers summarize data instead of reconstructing it (upscaling), therefore should use Conv1DTranspose instead
+# (Decoder) BatchNorm: should help the decoder with exploding gradients 
+
 
 
 from tensorflow import keras
@@ -59,50 +66,47 @@ def sweep_config(name, window_len, latent_layer_size):
     return sweep_config
 
 def model(window_length, latent_layer_size, activation_fn = 'SELU'):
-    # Hands-on-ML inputs:
-    # kernel size: small kernels better (e.g., 3), maybe first layer larger kernel ok since there's few input channels
-    # N filters: Increase deeper it goes, as there are more patterns the higher the abstraction (DOUBLECHECK)
-    
-    # Understanding Deep Learning:
-    # (Decoder) Don't used Conv1D or Pool layers: these layers summarize data instead of reconstructing it (upscaling), therefore should use Conv1DTranspose instead
-    # (Decoder) BatchNorm: should help the decoder with exploding gradients 
-    
+       
     inputs = Input(shape= (window_length, 1))
     # CNN Enconder Block 1
-    convB1_e = Conv1D(filters=32, kernel_size=5, padding='same', strides=1)(inputs)
+    # Conv Block 1
+    convB1_e = Conv1D(filters=6, kernel_size=5, padding='same', strides=1)(inputs)
     convB1_e = BatchNormalization()(convB1_e)
     convB1_e = Activation(ann_train.get_activation_fn(activation_fn))(convB1_e)
     convB1_e = MaxPool1D(pool_size = 3)(convB1_e)
-    # CNN Enconder Block 2
-    convB2_e = Conv1D(filters=64, kernel_size=3, padding='same', strides=1)(convB1_e)
+    # Conv Block 2
+    convB2_e = Conv1D(filters=16, kernel_size=3, padding='same', strides=1)(convB1_e)
     convB2_e = BatchNormalization()(convB2_e)
     convB2_e = Activation(ann_train.get_activation_fn(activation_fn))(convB2_e)
     convB2_e = MaxPool1D(pool_size = 3)(convB2_e)
-    
-    #Latent Space (no activation)
-    flattend = Flatten()(convB2_e)
-    encoded = Dense(latent_layer_size)(flattend)
-    
-    # Deconder (Mirror Encoder)
-    # Reshaping
-    # check: https://xifengguo.github.io/papers/ICONIP17-DCEC.pdf
-    reshape = Dense(flattend.shape[-1])(encoded)
-    reshape = Reshape((10, 64))(reshape)
+    # Conv Block 3
+    convB3_e = Conv1D(filters=60, kernel_size=3, padding='same', strides=1)(convB2_e)
+    convB3_e = BatchNormalization()(convB3_e)
+    convB3_e = Activation(ann_train.get_activation_fn(activation_fn))(convB3_e)
+    convB3_e = MaxPool1D(pool_size = 2)(convB3_e)
+    # Embedding Layer
+    flattend = Flatten()(convB3_e)
+    encoder = Dense(latent_layer_size)(flattend)
+    # Decoder Reshaping
+    reshape_dense = Dense(flattend.shape[-1])(encoder)
+    reshape_conv = Reshape((convB3_e.shape[1], convB3_e.shape[2]))(reshape_dense)
     # CNN Decoder Block 1
-    convB1_d = Conv1DTranspose(filters=64, kernel_size=3, padding='same', strides=3)(reshape)
+    convB1_d = Conv1DTranspose(filters=60, kernel_size=3, padding='same', strides=2)(reshape_conv)
     convB1_d = BatchNormalization()(convB1_d)
-    convB1_d = Activation(ann_train.get_activation_fn(activation_fn))(convB1_d)    
-    # CNN Decoder Block 1
-    convB2_d = Conv1DTranspose(filters=32, kernel_size=5, padding='same', strides=3)(convB1_d)
+    convB1_d = Activation(ann_train.get_activation_fn(activation_fn))(convB1_d)
+    # CNN Decoder Block 2
+    convB2_d = Conv1DTranspose(filters=16, kernel_size=3, padding='same', strides=3)(convB1_d)
     convB2_d = BatchNormalization()(convB2_d)
-    convB2_d = Activation(ann_train.get_activation_fn(activation_fn))(convB2_d)    
-    # Output Layer
-    conv_decoded = Conv1DTranspose(filters=1, kernel_size=3, padding='same', strides=1)(convB2_d)
-    flattend_decoded = Flatten()(conv_decoded)
-    decoded = Dense(window_length)(flattend_decoded)
-    # ERROR, Output shape != Input shape
+    convB2_d = Activation(ann_train.get_activation_fn(activation_fn))(convB2_d)#
+    # CNN Decoder Block 2
+    convB3_d = Conv1DTranspose(filters=6, kernel_size=5, padding='same', strides=3)(convB2_d)
+    convB3_d = BatchNormalization()(convB3_d)
+    convB3_d = Activation(ann_train.get_activation_fn(activation_fn))(convB3_d)
+    
+    # Output as Conv1D
+    decoder = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1, activation='linear')(convB3_d)    
     
     # Full Auto Encoder Model
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoder)
     
     return autoencoder   

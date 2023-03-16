@@ -13,6 +13,7 @@
 
 # Main Characteristics:
 # No Fully Connected (FC), all CNN layers, including Embeding
+# [Note page 487 (Hands-on-ML 2nd ed) shows how to convert a FC to a CNN, thinking of the embeding layer.]
 # Down-sampling with MaxPool1D layers, intead of stride
 # Upsampling with Conv1DTranspose and stride. (No UNpooling examples found)
 

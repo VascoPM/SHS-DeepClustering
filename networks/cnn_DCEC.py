@@ -80,7 +80,7 @@ def model(window_length, latent_layer_size, activation_fn = 'SELU'):
     
     # Embedding Layer
     flattend = Flatten()(convL3_e)
-    encoder = Dense(25)(flattend)
+    encoder = Dense(latent_layer_size)(flattend)
     
     # CNN Decoder
     reshape_dense = Dense(flattend.shape[-1])(encoder)
