@@ -53,29 +53,29 @@ def sweep_config(name, window_len, latent_layer_size):
 
 def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     
-    inputs = Input(shape= window_length)
+    inputs = Input(shape= window_length, name = 'Input')
     
     layer_e1 = Dense(500, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(inputs) 
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l1_enc')(inputs) 
     
     layer_e2 = Dense(500, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(layer_e1) 
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l2_enc')(layer_e1) 
     
     layer_e3 = Dense(2000, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(layer_e2)    
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l3_enc')(layer_e2)    
     #Latent Space (no activation)
-    encoded = Dense(latent_layer_size)(layer_e3)
+    encoded = Dense(latent_layer_size, name = 'Lantent_Space')(layer_e3)
        
     layer_d1 = Dense(2000, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(encoded)
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l1_dec')(encoded)
     
     layer_d2 = Dense(500, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(layer_d1)
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l2_dec')(layer_d1)
     
     layer_d3 = Dense(500, activation = ann_train.get_activation_fn(activation_fn),
-                     kernel_initializer = ann_train.get_initialization(activation_fn))(layer_d2)
+                     kernel_initializer = ann_train.get_initialization(activation_fn), name = 'l3_dec')(layer_d2)
     # Output Layer, no activation function
-    decoded = Dense(window_length)(layer_d3)
+    decoded = Dense(window_length, name = 'Output')(layer_d3)
        
     autoencoder = keras.models.Model(inputs=inputs, outputs = decoded, name = 'FC_N2D')
     

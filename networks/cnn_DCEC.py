@@ -72,23 +72,23 @@ def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     # filters=[32, 64, 128], kernel_size = [5,5,3]
     # stride 3 (multiple of 90)
     
-    inputs = Input(shape= (window_length, 1))
+    inputs = Input(shape= (window_length, 1), name = 'Input')
     # CNN Enconder 
-    convL1_e = Conv1D(filters=32, kernel_size=5, padding='same', strides=1)(inputs)
-    convL2_e = Conv1D(filters=64, kernel_size=5, padding='same', strides=3)(convL1_e)
-    convL3_e = Conv1D(filters=128, kernel_size=3, padding='same', strides=3)(convL2_e)
+    convL1_e = Conv1D(filters=32, kernel_size=5, padding='same', strides=1, name = 'Conv_1_enc')(inputs)
+    convL2_e = Conv1D(filters=64, kernel_size=5, padding='same', strides=3, name = 'Conv_2_enc')(convL1_e)
+    convL3_e = Conv1D(filters=128, kernel_size=3, padding='same', strides=3, name = 'Conv_3_enc')(convL2_e)
     
     # Embedding Layer
-    flattend = Flatten()(convL3_e)
-    encoder = Dense(latent_layer_size)(flattend)
+    flattend = Flatten(name = 'Reshape_Flat_Enc')(convL3_e)
+    encoder = Dense(latent_layer_size, name = 'Latent_Space')(flattend)
     
     # CNN Decoder
-    reshape_dense = Dense(flattend.shape[-1])(encoder)
-    reshape_conv = Reshape((10, 128))(reshape_dense)
+    reshape_dense = Dense(flattend.shape[-1], name = 'Reshape_Widen_Dec')(encoder)
+    reshape_conv = Reshape((10, 128), name = 'Reshape_Conv_Dec')(reshape_dense)
     
-    deconvL1_d = Conv1DTranspose(filters=64, kernel_size=3, padding='same', strides=3)(reshape_conv)
-    deconvL2_d = Conv1DTranspose(filters=32, kernel_size=5, padding='same', strides=3)(deconvL1_d)
-    decoder_conv = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1)(deconvL2_d)
+    deconvL1_d = Conv1DTranspose(filters=64, kernel_size=3, padding='same', strides=3, name = 'Conv_1_dec')(reshape_conv)
+    deconvL2_d = Conv1DTranspose(filters=32, kernel_size=5, padding='same', strides=3, name = 'Conv_2_dec')(deconvL1_d)
+    decoder_conv = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1, name = 'Output')(deconvL2_d)
         
     # Full Auto Encoder Model
     autoencoder = keras.models.Model(inputs=inputs, outputs = decoder_conv, name = 'CNN_DCEC')

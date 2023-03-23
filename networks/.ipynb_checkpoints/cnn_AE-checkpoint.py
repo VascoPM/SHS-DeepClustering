@@ -91,20 +91,20 @@ def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     reshape_dense = Dense(flattend.shape[-1], name='Decoder_Reshape1')(encoder)
     reshape_conv = Reshape((convB3_e.shape[1], convB3_e.shape[2]), name='Decoder_Reshape2')(reshape_dense)
     # CNN Decoder Block 1
-    convB1_d = Conv1DTranspose(filters=60, kernel_size=3, padding='same', strides=2)(reshape_conv)
-    convB1_d = BatchNormalization()(convB1_d)
-    convB1_d = Activation(ann_train.get_activation_fn(activation_fn))(convB1_d)
+    convB1_d = Conv1DTranspose(filters=60, kernel_size=3, padding='same', strides=2, name = '1BD_Conv')(reshape_conv)
+    convB1_d = BatchNormalization(name = '1BD_BN')(convB1_d)
+    convB1_d = Activation(ann_train.get_activation_fn(activation_fn), name = '1BD_Act')(convB1_d)
     # CNN Decoder Block 2
-    convB2_d = Conv1DTranspose(filters=16, kernel_size=3, padding='same', strides=3)(convB1_d)
-    convB2_d = BatchNormalization()(convB2_d)
-    convB2_d = Activation(ann_train.get_activation_fn(activation_fn))(convB2_d)#
+    convB2_d = Conv1DTranspose(filters=16, kernel_size=3, padding='same', strides=3, name = '2BD_Conv')(convB1_d)
+    convB2_d = BatchNormalization(name = '2BD_BN')(convB2_d)
+    convB2_d = Activation(ann_train.get_activation_fn(activation_fn), name = '2BD_Act')(convB2_d)#
     # CNN Decoder Block 2
-    convB3_d = Conv1DTranspose(filters=6, kernel_size=5, padding='same', strides=3)(convB2_d)
-    convB3_d = BatchNormalization()(convB3_d)
-    convB3_d = Activation(ann_train.get_activation_fn(activation_fn))(convB3_d)
+    convB3_d = Conv1DTranspose(filters=6, kernel_size=5, padding='same', strides=3, name = '3BD_Conv')(convB2_d)
+    convB3_d = BatchNormalization(name = '3BD_BN')(convB3_d)
+    convB3_d = Activation(ann_train.get_activation_fn(activation_fn), name = '3BD_Act')(convB3_d)
     
     # Output as Conv1D
-    decoder = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1, activation='linear')(convB3_d)    
+    decoder = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1, activation='linear', name = 'Output')(convB3_d)    
     
     # Full Auto Encoder Model
     autoencoder = keras.models.Model(inputs=inputs, outputs = decoder, name = 'CNN_AE')
