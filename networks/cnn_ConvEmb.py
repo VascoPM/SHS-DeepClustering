@@ -75,7 +75,7 @@ def sweep_config(name, window_len, latent_layer_size):
     
     return sweep_config
 
-def model(window_length, latent_layer_size, activation_fn = 'SELU'):
+def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     # filters=[6, 16, 60], kernel_size = [5,3,3] (guess)
     # Note, Down Sampling is also achieved with 'valid' padding and kernel size 
     # But unlike reference this is only used in the Embeding layer to achieve the desired Latent Space dimensions (depth-wise)
@@ -131,6 +131,6 @@ def model(window_length, latent_layer_size, activation_fn = 'SELU'):
    
         
     # Full Auto Encoder Model
-    autoencoder = keras.models.Model(inputs=inputs, outputs = output)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = output, name = 'CNN_ConvEmb')
     
     return autoencoder   

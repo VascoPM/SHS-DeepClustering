@@ -56,7 +56,7 @@ def sweep_config(name, window_len, latent_layer_size):
     
     return sweep_config
 
-def model(window_length, latent_layer_size, activation_fn = 'SELU'):
+def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     
     inputs = Input(shape= (window_length, 1))
     # CNN Enconder Block 1
@@ -93,6 +93,6 @@ def model(window_length, latent_layer_size, activation_fn = 'SELU'):
     decoded = Conv1D(filters= 1, kernel_size=9, padding='same', strides=1)(layer_d3)
     
     # Full Auto Encoder Model
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded, name = 'CNN_E2E')
     
     return autoencoder   

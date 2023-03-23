@@ -68,7 +68,7 @@ def sweep_config(name, window_len, latent_layer_size):
     
     return sweep_config
 
-def model(window_length, latent_layer_size, activation_fn = 'SELU'):
+def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     # filters=[32, 64, 128], kernel_size = [5,5,3]
     # stride 3 (multiple of 90)
     
@@ -91,6 +91,6 @@ def model(window_length, latent_layer_size, activation_fn = 'SELU'):
     decoder_conv = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1)(deconvL2_d)
         
     # Full Auto Encoder Model
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoder_conv)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoder_conv, name = 'CNN_DCEC')
     
     return autoencoder   

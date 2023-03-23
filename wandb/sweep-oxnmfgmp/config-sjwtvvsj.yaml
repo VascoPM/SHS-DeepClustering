@@ -1,0 +1,16 @@
+wandb_version: 1
+
+activation_fn:
+  value: LeakyReLU
+batch_size:
+  value: 116
+epochs:
+  value: 100
+latent_layer_size:
+  value: 25
+learning_rate:
+  value: 0.0033325338110801964
+optimizer:
+  value: sgd
+window_length:
+  value: 90

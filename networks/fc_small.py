@@ -51,7 +51,7 @@ def sweep_config(name, window_len, latent_layer_size):
     
     return sweep_config
 
-def model(window_length, latent_layer_size, activation_fn):
+def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     
     inputs = Input(shape= window_length)
     
@@ -71,6 +71,6 @@ def model(window_length, latent_layer_size, activation_fn):
     
     decoded = Dense(window_length)(layer_d2)
        
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded, name = 'FC_Small')
     
     return autoencoder   

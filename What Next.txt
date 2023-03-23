@@ -1,0 +1,9 @@
+# WHAT TO TRY:
+    - Make a LSTM AE, basic just to show we tryied. (check Dimitrios architecture)
+    - Clean Up Sweep Laucher:
+        - Zscore outside
+        - Load AE model at the top (not this duplicated set up)
+    - Review Experiment Set Up and Create Fixed datasets (Not preprocessing on training, e.g, zscoring)
+    - Fine tune Hyperparameters (i.e., reduce variables)(Per Architecture if needed):
+        - Single Activationa type (little effect)
+        - Choose Optimizer (Nadam, looking better for CNNs)

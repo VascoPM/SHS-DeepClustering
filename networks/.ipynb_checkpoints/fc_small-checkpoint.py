@@ -71,6 +71,6 @@ def model(window_length, latent_layer_size, activation_fn):
     
     decoded = Dense(window_length)(layer_d2)
        
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoded, name = 'FC_Small')
     
     return autoencoder   

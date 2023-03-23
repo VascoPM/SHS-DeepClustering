@@ -65,31 +65,31 @@ def sweep_config(name, window_len, latent_layer_size):
     
     return sweep_config
 
-def model(window_length, latent_layer_size, activation_fn = 'SELU'):
+def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
        
     inputs = Input(shape= (window_length, 1))
     # CNN Enconder Block 1
     # Conv Block 1
-    convB1_e = Conv1D(filters=6, kernel_size=5, padding='same', strides=1)(inputs)
-    convB1_e = BatchNormalization()(convB1_e)
-    convB1_e = Activation(ann_train.get_activation_fn(activation_fn))(convB1_e)
-    convB1_e = MaxPool1D(pool_size = 3)(convB1_e)
+    convB1_e = Conv1D(filters=6, kernel_size=5, padding='same', strides=1, name = '1BE_Conv')(inputs)
+    convB1_e = BatchNormalization(name = '1BE_BN')(convB1_e)
+    convB1_e = Activation(ann_train.get_activation_fn(activation_fn), name = '1BE_Act')(convB1_e)
+    convB1_e = MaxPool1D(pool_size = 3, name = '1BE_MaxP')(convB1_e)
     # Conv Block 2
-    convB2_e = Conv1D(filters=16, kernel_size=3, padding='same', strides=1)(convB1_e)
-    convB2_e = BatchNormalization()(convB2_e)
-    convB2_e = Activation(ann_train.get_activation_fn(activation_fn))(convB2_e)
-    convB2_e = MaxPool1D(pool_size = 3)(convB2_e)
+    convB2_e = Conv1D(filters=16, kernel_size=3, padding='same', strides=1, name = '2BE_Conv')(convB1_e)
+    convB2_e = BatchNormalization(name = '2BE_BN')(convB2_e)
+    convB2_e = Activation(ann_train.get_activation_fn(activation_fn), name = '2BE_Act')(convB2_e)
+    convB2_e = MaxPool1D(pool_size = 3, name = '2BE_MaxP')(convB2_e)
     # Conv Block 3
-    convB3_e = Conv1D(filters=60, kernel_size=3, padding='same', strides=1)(convB2_e)
-    convB3_e = BatchNormalization()(convB3_e)
-    convB3_e = Activation(ann_train.get_activation_fn(activation_fn))(convB3_e)
-    convB3_e = MaxPool1D(pool_size = 2)(convB3_e)
+    convB3_e = Conv1D(filters=60, kernel_size=3, padding='same', strides=1, name = '3BE_Conv')(convB2_e)
+    convB3_e = BatchNormalization(name = '3BE_BN')(convB3_e)
+    convB3_e = Activation(ann_train.get_activation_fn(activation_fn), name = '3BE_Act')(convB3_e)
+    convB3_e = MaxPool1D(pool_size = 2, name = '3BE_MaxP')(convB3_e)
     # Embedding Layer
-    flattend = Flatten()(convB3_e)
-    encoder = Dense(latent_layer_size)(flattend)
+    flattend = Flatten(name='Encoder_Reshape')(convB3_e)
+    encoder = Dense(latent_layer_size, name='Latent_Space')(flattend)
     # Decoder Reshaping
-    reshape_dense = Dense(flattend.shape[-1])(encoder)
-    reshape_conv = Reshape((convB3_e.shape[1], convB3_e.shape[2]))(reshape_dense)
+    reshape_dense = Dense(flattend.shape[-1], name='Decoder_Reshape1')(encoder)
+    reshape_conv = Reshape((convB3_e.shape[1], convB3_e.shape[2]), name='Decoder_Reshape2')(reshape_dense)
     # CNN Decoder Block 1
     convB1_d = Conv1DTranspose(filters=60, kernel_size=3, padding='same', strides=2)(reshape_conv)
     convB1_d = BatchNormalization()(convB1_d)
@@ -107,6 +107,6 @@ def model(window_length, latent_layer_size, activation_fn = 'SELU'):
     decoder = Conv1DTranspose(filters=1, kernel_size=5, padding='same', strides=1, activation='linear')(convB3_d)    
     
     # Full Auto Encoder Model
-    autoencoder = keras.models.Model(inputs=inputs, outputs = decoder)
+    autoencoder = keras.models.Model(inputs=inputs, outputs = decoder, name = 'CNN_AE')
     
     return autoencoder   

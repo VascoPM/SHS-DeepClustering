@@ -1,0 +1,16 @@
+wandb_version: 1
+
+activation_fn:
+  value: SELU
+batch_size:
+  value: 178
+epochs:
+  value: 100
+latent_layer_size:
+  value: 25
+learning_rate:
+  value: 0.0011407659150172015
+optimizer:
+  value: nadam
+window_length:
+  value: 90
