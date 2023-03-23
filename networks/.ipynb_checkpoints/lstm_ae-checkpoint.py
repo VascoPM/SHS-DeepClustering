@@ -2,6 +2,11 @@
 # https://towardsdatascience.com/step-by-step-understanding-lstm-autoencoder-layers-ffab055b6352
 # Understanding Deep Learning (Chapter 7.6), Chitta R., 2021
 
+# Note on Activation Function:
+# In order to make full use of GPU processing power, the LSTM layers must use 'tanh' activation.
+# There are other requirements for optimal GPU usage, but these are met by default, see:
+# https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM
+
 from tensorflow import keras
 from keras.models import Sequential
 from tensorflow.keras.layers import Input, Dense, LSTM, RepeatVector, TimeDistributed
@@ -39,8 +44,8 @@ def sweep_config(name, window_len, latent_layer_size):
         'learning_rate': {
             # a flat distribution between 0 and 0.1
             'distribution': 'log_uniform_values',
-            'min': 0.0001,
-            'max': 0.01,
+            'min': 0.00001,
+            'max': 0.001,
           },
         'batch_size': {
             # integers between 2 and 256
@@ -54,8 +59,6 @@ def sweep_config(name, window_len, latent_layer_size):
     
     sweep_config['parameters'] = parameters_dict
 
-    
-  
     return sweep_config
 
 
@@ -64,13 +67,13 @@ def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     inputs = Input(shape= (window_length, 1))
     
     # Encoder
-    lstm_e1 = LSTM(100, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Encoder')(inputs)
-    embeding = LSTM(latent_layer_size, activation = ann_train.get_activation_fn(activation_fn), return_sequences = False, name='Lantent_Space')(lstm_e1)
+    lstm_e1 = LSTM(100, activation = 'tanh', return_sequences = True, name='Encoder')(inputs)
+    embeding = LSTM(latent_layer_size, activation = 'tanh', return_sequences = False, name='Lantent_Space')(lstm_e1)
     
     # Decoder
     repeatV = RepeatVector(window_length, name='Reshape_Embeding')(embeding)
-    lstm_d1 = LSTM(latent_layer_size, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Decoder_1')(repeatV)
-    lstm_d2 = LSTM(100, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Decoder_2')(lstm_d1)
+    lstm_d1 = LSTM(latent_layer_size, activation = 'tanh', return_sequences = True, name='Decoder_1')(repeatV)
+    lstm_d2 = LSTM(100, activation = 'tanh', return_sequences = True, name='Decoder_2')(lstm_d1)
     
     outputs = TimeDistributed(Dense(1), name='Reshape_Output')(lstm_d2)
     
