@@ -46,3 +46,22 @@ def Zscore_Individually (df_in, window_cols, all_constant_replace = -1):
         
 
     return df_zscore
+
+def retrive_window_col_names(dataset_name, win_prefix = 'd'):
+    # retriving window length
+    window_len = int(dataset_name.split('_')[-2][1:]) # Gets _wXX part of name, then skips 'w' to get the number.
+    # defining window column names
+    window_cols = [None]*window_len
+    for i  in range(window_len):
+        window_cols[i] = f'{win_prefix}' + str(i+1)
+        
+    return window_cols, window_len
+
+def data_location(dataset_name, on_gradient):    
+    if on_gradient == False:
+        # Uses name to navigate folders
+        dataset_folder = "_".join(dataset_name.split('_')[:-2]) #Takes out window length section
+        return f'../Data_Storage_Processing/Data/{dataset_folder}/{dataset_name}.csv'
+    
+    if  on_gradient == True:
+        return f'/datasets/kenya-90k-set-1-w90/{dataset_name}.csv'
