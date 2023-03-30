@@ -1,7 +1,4 @@
 # WHAT TO TRY:
-    - Clean Up Sweep Laucher:
-        - Zscore outside [Done]
-    - Review Experiment Set Up and Create Fixed datasets (Not preprocessing on training, e.g, zscoring)
     - Fine tune Hyperparameters (i.e., reduce variables)(Per Architecture if needed):
         - Single Activationa type (little effect)
         - Choose Optimizer (Nadam, looking better for CNNs)
