@@ -1,9 +1,12 @@
 # WHAT TO TRY:
-    - Make a LSTM AE, basic just to show we tryied. (check Dimitrios architecture)
-    - Clean Up Sweep Laucher:
-        - Zscore outside
-        - Load AE model at the top (not this duplicated set up)
-    - Review Experiment Set Up and Create Fixed datasets (Not preprocessing on training, e.g, zscoring)
-    - Fine tune Hyperparameters (i.e., reduce variables)(Per Architecture if needed):
-        - Single Activationa type (little effect)
-        - Choose Optimizer (Nadam, looking better for CNNs)
+    - New Error levels very high (new dataset):
+        - Check if it's a dataset issue (how does pW compare with manual_zcore?)
+        - Check if Exponential Decay Lr is faulty
+        
+# Idea:
+
+Baseline comparisson strategy:
+Compare both the Recontruction Error and Clustering Validation against Mean Based Predict (MBP).
+Mean Based Prediction meaning, replacing the data with it's mean value (per window), so each window is a flat line at it's original mean.
+For the Recontruction Error, this will signal whether the model found a meaningful compression beyond a mean.
+For the Clustering, one can do the clustering with just the means per window. If the Clustering outcome of a Auto-Encoder appproach is less informative than the MBP approach, then it's pointless.

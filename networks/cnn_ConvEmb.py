@@ -40,7 +40,7 @@ def sweep_config(name, window_len, latent_layer_size):
     
     parameters_dict = {
         'optimizer': {
-            'values': ['nadam', 'sgd']
+            'values': ['nadam']
         },
         'latent_layer_size': {
             'value': latent_layer_size 
@@ -52,20 +52,20 @@ def sweep_config(name, window_len, latent_layer_size):
             'value': window_len
         },
         'activation_fn':{
-            'values': ['SELU','LeakyReLU']
+            'values': ['LeakyReLU']
         },
         'learning_rate': {
             # a flat distribution between 0 and 0.1
             'distribution': 'log_uniform_values',
-            'min': 0.00001,
-            'max': 0.001,
+            'min': 0.001,
+            'max': 0.01,
           },
         'batch_size': {
             # integers between 2 and 256
             # with evenly-distributed logarithms 
             'distribution': 'q_log_uniform_values',
             'q': 2,
-            'min': 100,
+            'min': 200,
             'max': 300,
           }
         }
