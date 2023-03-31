@@ -1,0 +1,5 @@
+2023-03-31 16:23:57,173 INFO    StreamThr :12968 [internal.py:wandb_internal():87] W&B internal server running at pid: 12968, started at: 2023-03-31 16:23:57.172933
+2023-03-31 16:23:57,175 DEBUG   HandlerThread:12968 [handler.py:handle_request():139] handle_request: status
+2023-03-31 16:23:57,177 DEBUG   SenderThread:12968 [sender.py:send_request():317] send_request: status
+2023-03-31 16:23:57,186 INFO    WriterThread:12968 [datastore.py:open_for_write():75] open: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230331_162357-b2mbg7nt\run-b2mbg7nt.wandb
+2023-03-31 16:23:57,186 DEBUG   SenderThread:12968 [sender.py:send():303] send: header
