@@ -1,0 +1,161 @@
+2023-04-03 15:32:39,918 INFO    StreamThr :6504 [internal.py:wandb_internal():87] W&B internal server running at pid: 6504, started at: 2023-04-03 15:32:39.916941
+2023-04-03 15:32:39,919 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: status
+2023-04-03 15:32:39,923 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: status
+2023-04-03 15:32:39,931 DEBUG   SenderThread:6504 [sender.py:send():303] send: header
+2023-04-03 15:32:39,931 INFO    WriterThread:6504 [datastore.py:open_for_write():75] open: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\run-bu5ovcj1.wandb
+2023-04-03 15:32:40,267 DEBUG   SenderThread:6504 [sender.py:send():303] send: run
+2023-04-03 15:32:40,732 INFO    SenderThread:6504 [dir_watcher.py:__init__():216] watching files in: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files
+2023-04-03 15:32:40,732 INFO    SenderThread:6504 [sender.py:_start_run_threads():928] run started: bu5ovcj1 with start time 1680532359.919424
+2023-04-03 15:32:40,732 DEBUG   SenderThread:6504 [sender.py:send():303] send: summary
+2023-04-03 15:32:40,735 INFO    SenderThread:6504 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:32:40,739 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: check_version
+2023-04-03 15:32:40,739 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: check_version
+2023-04-03 15:32:40,818 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: run_start
+2023-04-03 15:32:40,832 DEBUG   HandlerThread:6504 [system_info.py:__init__():31] System info init
+2023-04-03 15:32:40,833 DEBUG   HandlerThread:6504 [system_info.py:__init__():46] System info init done
+2023-04-03 15:32:40,833 INFO    HandlerThread:6504 [system_monitor.py:start():150] Starting system monitor
+2023-04-03 15:32:40,834 INFO    SystemMonitor:6504 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-04-03 15:32:40,834 INFO    HandlerThread:6504 [system_monitor.py:probe():171] Collecting system info
+2023-04-03 15:32:40,837 INFO    SystemMonitor:6504 [interfaces.py:start():168] Started cpu
+2023-04-03 15:32:40,838 DEBUG   HandlerThread:6504 [system_info.py:probe():195] Probing system
+2023-04-03 15:32:40,838 INFO    SystemMonitor:6504 [interfaces.py:start():168] Started disk
+2023-04-03 15:32:40,839 INFO    SystemMonitor:6504 [interfaces.py:start():168] Started memory
+2023-04-03 15:32:40,848 INFO    SystemMonitor:6504 [interfaces.py:start():168] Started network
+2023-04-03 15:32:40,862 DEBUG   HandlerThread:6504 [system_info.py:_probe_git():180] Probing git
+2023-04-03 15:32:41,572 DEBUG   HandlerThread:6504 [system_info.py:_probe_git():188] Probing git done
+2023-04-03 15:32:41,572 DEBUG   HandlerThread:6504 [system_info.py:probe():241] Probing system done
+2023-04-03 15:32:41,572 DEBUG   HandlerThread:6504 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.19044-SP0', 'python': '3.9.15', 'heartbeatAt': '2023-04-03T14:32:40.838583', 'startedAt': '2023-04-03T14:32:39.882323', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering/W&B_SweepLauncher.ipynb', 'root': 'C:/Users/ucesvpm/OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering', 'git': {'remote': 'https://github.com/VascoPM/SHS-DeepClustering.git', 'commit': '4d3b916dd7c56a9b61ea628d8a32bc117d0a1ac9'}, 'email': 'vasco.mergulhao.20@ucl.ac.uk', 'host': 'CS00101149', 'username': 'ucesvpm', 'executable': 'C:\\Users\\ucesvpm\\Anaconda3\\envs\\TensorFlow_PhD\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1805.0, 'min': 0.0, 'max': 1805.0}, 'cpu_freq_per_core': [{'current': 1805.0, 'min': 0.0, 'max': 1805.0}], 'disk': {'total': 476.32519149780273, 'used': 383.33545303344727}, 'memory': {'total': 31.566776275634766}}
+2023-04-03 15:32:41,572 INFO    HandlerThread:6504 [system_monitor.py:probe():181] Finished collecting system info
+2023-04-03 15:32:41,572 INFO    HandlerThread:6504 [system_monitor.py:probe():184] Publishing system info
+2023-04-03 15:32:41,572 DEBUG   HandlerThread:6504 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-03 15:32:41,574 DEBUG   HandlerThread:6504 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-03 15:32:41,574 DEBUG   HandlerThread:6504 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-03 15:32:41,753 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-summary.json
+2023-04-03 15:32:41,753 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\conda-environment.yaml
+2023-04-03 15:32:41,754 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\requirements.txt
+2023-04-03 15:32:51,824 DEBUG   HandlerThread:6504 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-03 15:32:51,826 INFO    HandlerThread:6504 [system_monitor.py:probe():186] Finished publishing system info
+2023-04-03 15:32:51,840 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\conda-environment.yaml
+2023-04-03 15:32:51,840 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-metadata.json
+2023-04-03 15:32:51,946 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:32:51,946 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:32:51,952 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-03 15:32:52,124 DEBUG   SenderThread:6504 [sender.py:send():303] send: telemetry
+2023-04-03 15:32:52,125 DEBUG   SenderThread:6504 [sender.py:send():303] send: telemetry
+2023-04-03 15:32:52,125 DEBUG   SenderThread:6504 [sender.py:send():303] send: config
+2023-04-03 15:32:52,126 DEBUG   SenderThread:6504 [sender.py:send():303] send: config
+2023-04-03 15:32:52,126 DEBUG   SenderThread:6504 [sender.py:send():303] send: telemetry
+2023-04-03 15:32:52,126 DEBUG   SenderThread:6504 [sender.py:send():303] send: exit
+2023-04-03 15:32:52,126 INFO    SenderThread:6504 [sender.py:send_exit():442] handling exit code: 1
+2023-04-03 15:32:52,126 INFO    SenderThread:6504 [sender.py:send_exit():444] handling runtime: 11
+2023-04-03 15:32:52,131 INFO    SenderThread:6504 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:32:52,133 INFO    SenderThread:6504 [sender.py:send_exit():450] send defer
+2023-04-03 15:32:52,134 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: poll_exit
+2023-04-03 15:32:52,134 DEBUG   SenderThread:6504 [sender.py:send():303] send: files
+2023-04-03 15:32:52,135 INFO    SenderThread:6504 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-04-03 15:32:52,136 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,136 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 0
+2023-04-03 15:32:52,137 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,138 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-04-03 15:32:52,138 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 1
+2023-04-03 15:32:52,138 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: keepalive
+2023-04-03 15:32:52,139 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,140 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 1
+2023-04-03 15:32:52,140 INFO    HandlerThread:6504 [system_monitor.py:finish():160] Stopping system monitor
+2023-04-03 15:32:52,140 DEBUG   SystemMonitor:6504 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-04-03 15:32:52,140 DEBUG   SystemMonitor:6504 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-04-03 15:32:52,140 INFO    HandlerThread:6504 [interfaces.py:finish():175] Joined cpu
+2023-04-03 15:32:52,140 DEBUG   SystemMonitor:6504 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-04-03 15:32:52,140 INFO    HandlerThread:6504 [interfaces.py:finish():175] Joined disk
+2023-04-03 15:32:52,141 INFO    HandlerThread:6504 [interfaces.py:finish():175] Joined memory
+2023-04-03 15:32:52,141 INFO    HandlerThread:6504 [interfaces.py:finish():175] Joined network
+2023-04-03 15:32:52,141 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,142 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-04-03 15:32:52,142 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 2
+2023-04-03 15:32:52,144 DEBUG   SenderThread:6504 [sender.py:send():303] send: stats
+2023-04-03 15:32:52,145 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,145 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 2
+2023-04-03 15:32:52,145 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,145 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-04-03 15:32:52,145 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 3
+2023-04-03 15:32:52,146 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,146 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 3
+2023-04-03 15:32:52,147 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,147 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-04-03 15:32:52,147 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 4
+2023-04-03 15:32:52,148 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,148 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 4
+2023-04-03 15:32:52,148 DEBUG   SenderThread:6504 [sender.py:send():303] send: summary
+2023-04-03 15:32:52,151 INFO    SenderThread:6504 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:32:52,151 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,151 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-04-03 15:32:52,151 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 5
+2023-04-03 15:32:52,152 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,152 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 5
+2023-04-03 15:32:52,153 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,153 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-04-03 15:32:52,350 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 6
+2023-04-03 15:32:52,350 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,350 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 6
+2023-04-03 15:32:52,350 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,351 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-04-03 15:32:52,351 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 7
+2023-04-03 15:32:52,352 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,352 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 7
+2023-04-03 15:32:52,352 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,352 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-04-03 15:32:52,352 INFO    SenderThread:6504 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-04-03 15:32:52,727 INFO    Thread-22 :6504 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\AppData\Local\Temp\tmpjnq0a1dhwandb\2x9hk5gm-wandb-metadata.json
+2023-04-03 15:32:52,841 INFO    Thread-17 :6504 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-summary.json
+2023-04-03 15:32:52,844 INFO    SenderThread:6504 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\config.yaml
+2023-04-03 15:32:52,845 INFO    SenderThread:6504 [dir_watcher.py:finish():392] scan: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files
+2023-04-03 15:32:52,845 INFO    SenderThread:6504 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\conda-environment.yaml conda-environment.yaml
+2023-04-03 15:32:52,846 INFO    SenderThread:6504 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\config.yaml config.yaml
+2023-04-03 15:32:52,852 INFO    SenderThread:6504 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\requirements.txt requirements.txt
+2023-04-03 15:32:52,858 INFO    SenderThread:6504 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-metadata.json wandb-metadata.json
+2023-04-03 15:32:52,859 INFO    SenderThread:6504 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-summary.json wandb-summary.json
+2023-04-03 15:32:52,865 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 8
+2023-04-03 15:32:52,867 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:52,871 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 8
+2023-04-03 15:32:52,872 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:52,873 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-04-03 15:32:52,873 INFO    SenderThread:6504 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-03 15:32:53,397 INFO    Thread-26 :6504 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\wandb-summary.json
+2023-04-03 15:32:53,401 INFO    Thread-24 :6504 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\config.yaml
+2023-04-03 15:32:53,406 INFO    Thread-23 :6504 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\conda-environment.yaml
+2023-04-03 15:32:53,501 INFO    Thread-25 :6504 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\files\requirements.txt
+2023-04-03 15:32:53,711 INFO    Thread-16 :6504 [sender.py:transition_state():463] send defer: 9
+2023-04-03 15:32:53,712 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:53,712 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 9
+2023-04-03 15:32:53,713 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:53,713 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-04-03 15:32:53,713 INFO    SenderThread:6504 [file_pusher.py:join():173] waiting for file pusher
+2023-04-03 15:32:53,713 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 10
+2023-04-03 15:32:53,714 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:53,714 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 10
+2023-04-03 15:32:53,714 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:53,714 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-04-03 15:32:54,177 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 11
+2023-04-03 15:32:54,179 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:54,179 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 11
+2023-04-03 15:32:54,180 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:54,180 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-04-03 15:32:54,180 INFO    SenderThread:6504 [sender.py:transition_state():463] send defer: 12
+2023-04-03 15:32:54,181 DEBUG   SenderThread:6504 [sender.py:send():303] send: final
+2023-04-03 15:32:54,182 DEBUG   SenderThread:6504 [sender.py:send():303] send: footer
+2023-04-03 15:32:54,182 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:32:54,182 INFO    HandlerThread:6504 [handler.py:handle_request_defer():162] handle defer: 12
+2023-04-03 15:32:54,182 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:32:54,182 INFO    SenderThread:6504 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-04-03 15:32:54,187 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-03 15:32:54,187 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: poll_exit
+2023-04-03 15:32:54,189 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: server_info
+2023-04-03 15:32:54,190 DEBUG   SenderThread:6504 [sender.py:send_request():317] send_request: server_info
+2023-04-03 15:32:54,196 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: get_summary
+2023-04-03 15:32:54,198 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: sampled_history
+2023-04-03 15:32:54,537 DEBUG   HandlerThread:6504 [handler.py:handle_request():139] handle_request: shutdown
+2023-04-03 15:32:54,537 INFO    HandlerThread:6504 [handler.py:finish():814] shutting down handler
+2023-04-03 15:32:55,195 INFO    WriterThread:6504 [datastore.py:close():279] close: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153239-bu5ovcj1\run-bu5ovcj1.wandb
+2023-04-03 15:32:55,536 INFO    SenderThread:6504 [sender.py:finish():1331] shutting down sender
+2023-04-03 15:32:55,536 INFO    SenderThread:6504 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-03 15:32:55,536 INFO    SenderThread:6504 [file_pusher.py:join():173] waiting for file pusher

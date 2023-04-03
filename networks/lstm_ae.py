@@ -47,6 +47,9 @@ def sweep_config(name, window_len, latent_layer_size):
             'min': 0.001,
             'max': 0.01,
           },
+        'lr_decay': {
+            'value': 0.01
+        },        
         'batch_size': {
             # integers between 2 and 256
             # with evenly-distributed logarithms 
@@ -67,13 +70,13 @@ def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     inputs = Input(shape= (window_length, 1))
     
     # Encoder
-    lstm_e1 = LSTM(100, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Encoder')(inputs)
-    embeding = LSTM(latent_layer_size, activation = ann_train.get_activation_fn(activation_fn), return_sequences = False, name='Lantent_Space')(lstm_e1)
+    lstm_e1 = LSTM(100, activation = 'tanh', return_sequences = True, name='Encoder')(inputs)
+    embeding = LSTM(latent_layer_size, activation = 'tanh', return_sequences = False, name='Lantent_Space')(lstm_e1)
     
     # Decoder
     repeatV = RepeatVector(window_length, name='Reshape_Embeding')(embeding)
-    lstm_d1 = LSTM(latent_layer_size, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Decoder_1')(repeatV)
-    lstm_d2 = LSTM(100, activation = ann_train.get_activation_fn(activation_fn), return_sequences = True, name='Decoder_2')(lstm_d1)
+    lstm_d1 = LSTM(latent_layer_size, activation = 'tanh', return_sequences = True, name='Decoder_1')(repeatV)
+    lstm_d2 = LSTM(100, activation = 'tanh', return_sequences = True, name='Decoder_2')(lstm_d1)
     
     outputs = TimeDistributed(Dense(1), name='Reshape_Output')(lstm_d2)
     

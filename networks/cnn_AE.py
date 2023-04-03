@@ -50,6 +50,9 @@ def sweep_config(name, window_len, latent_layer_size):
             'min': 0.0001,
             'max': 0.01,
           },
+        'lr_decay': {
+            'value': 0.01
+        },        
         'batch_size': {
             # integers between 2 and 256
             # with evenly-distributed logarithms 

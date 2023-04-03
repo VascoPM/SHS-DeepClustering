@@ -1,0 +1,838 @@
+2023-04-03 15:37:35,040 INFO    StreamThr :15860 [internal.py:wandb_internal():87] W&B internal server running at pid: 15860, started at: 2023-04-03 15:37:35.039533
+2023-04-03 15:37:35,042 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: status
+2023-04-03 15:37:35,047 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: status
+2023-04-03 15:37:35,056 DEBUG   SenderThread:15860 [sender.py:send():303] send: header
+2023-04-03 15:37:35,056 INFO    WriterThread:15860 [datastore.py:open_for_write():75] open: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\run-5d15zy9t.wandb
+2023-04-03 15:37:35,409 DEBUG   SenderThread:15860 [sender.py:send():303] send: run
+2023-04-03 15:37:35,847 INFO    SenderThread:15860 [dir_watcher.py:__init__():216] watching files in: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files
+2023-04-03 15:37:35,847 INFO    SenderThread:15860 [sender.py:_start_run_threads():928] run started: 5d15zy9t with start time 1680532655.040526
+2023-04-03 15:37:35,847 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:35,848 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:35,857 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: check_version
+2023-04-03 15:37:35,857 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: check_version
+2023-04-03 15:37:35,941 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: run_start
+2023-04-03 15:37:35,956 DEBUG   HandlerThread:15860 [system_info.py:__init__():31] System info init
+2023-04-03 15:37:35,956 DEBUG   HandlerThread:15860 [system_info.py:__init__():46] System info init done
+2023-04-03 15:37:35,956 INFO    HandlerThread:15860 [system_monitor.py:start():150] Starting system monitor
+2023-04-03 15:37:35,956 INFO    SystemMonitor:15860 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-04-03 15:37:35,957 INFO    HandlerThread:15860 [system_monitor.py:probe():171] Collecting system info
+2023-04-03 15:37:35,961 INFO    SystemMonitor:15860 [interfaces.py:start():168] Started cpu
+2023-04-03 15:37:35,962 DEBUG   HandlerThread:15860 [system_info.py:probe():195] Probing system
+2023-04-03 15:37:35,962 INFO    SystemMonitor:15860 [interfaces.py:start():168] Started disk
+2023-04-03 15:37:35,963 INFO    SystemMonitor:15860 [interfaces.py:start():168] Started memory
+2023-04-03 15:37:35,975 INFO    SystemMonitor:15860 [interfaces.py:start():168] Started network
+2023-04-03 15:37:35,992 DEBUG   HandlerThread:15860 [system_info.py:_probe_git():180] Probing git
+2023-04-03 15:37:36,725 DEBUG   HandlerThread:15860 [system_info.py:_probe_git():188] Probing git done
+2023-04-03 15:37:36,726 DEBUG   HandlerThread:15860 [system_info.py:probe():241] Probing system done
+2023-04-03 15:37:36,726 DEBUG   HandlerThread:15860 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.19044-SP0', 'python': '3.9.15', 'heartbeatAt': '2023-04-03T14:37:35.962389', 'startedAt': '2023-04-03T14:37:34.991954', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering/W&B_SweepLauncher.ipynb', 'root': 'C:/Users/ucesvpm/OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering', 'git': {'remote': 'https://github.com/VascoPM/SHS-DeepClustering.git', 'commit': '4d3b916dd7c56a9b61ea628d8a32bc117d0a1ac9'}, 'email': 'vasco.mergulhao.20@ucl.ac.uk', 'host': 'CS00101149', 'username': 'ucesvpm', 'executable': 'C:\\Users\\ucesvpm\\Anaconda3\\envs\\TensorFlow_PhD\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1805.0, 'min': 0.0, 'max': 1805.0}, 'cpu_freq_per_core': [{'current': 1805.0, 'min': 0.0, 'max': 1805.0}], 'disk': {'total': 476.32519149780273, 'used': 383.3355293273926}, 'memory': {'total': 31.566776275634766}}
+2023-04-03 15:37:36,726 INFO    HandlerThread:15860 [system_monitor.py:probe():181] Finished collecting system info
+2023-04-03 15:37:36,726 INFO    HandlerThread:15860 [system_monitor.py:probe():184] Publishing system info
+2023-04-03 15:37:36,726 DEBUG   HandlerThread:15860 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-03 15:37:36,730 DEBUG   HandlerThread:15860 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-03 15:37:36,730 DEBUG   HandlerThread:15860 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-03 15:37:36,860 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\requirements.txt
+2023-04-03 15:37:36,861 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\conda-environment.yaml
+2023-04-03 15:37:36,861 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:37:45,559 DEBUG   HandlerThread:15860 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-03 15:37:45,562 INFO    HandlerThread:15860 [system_monitor.py:probe():186] Finished publishing system info
+2023-04-03 15:37:45,677 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:37:45,678 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:37:45,685 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: get_summary
+2023-04-03 15:37:45,837 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:37:45,837 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:37:45,837 DEBUG   SenderThread:15860 [sender.py:send():303] send: config
+2023-04-03 15:37:45,837 DEBUG   SenderThread:15860 [sender.py:send():303] send: config
+2023-04-03 15:37:45,838 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:37:45,838 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:37:45,838 DEBUG   SenderThread:15860 [sender.py:send():303] send: files
+2023-04-03 15:37:45,838 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file model-best.h5 with policy live
+2023-04-03 15:37:45,840 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:37:45,842 DEBUG   SenderThread:15860 [sender.py:send():303] send: files
+2023-04-03 15:37:45,842 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-04-03 15:37:45,924 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\conda-environment.yaml
+2023-04-03 15:37:45,924 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:45,924 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-metadata.json
+2023-04-03 15:37:46,494 INFO    Thread-22 :15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\AppData\Local\Temp\tmpc1zxzaqjwandb\3cmxh175-wandb-metadata.json
+2023-04-03 15:37:47,931 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:48,167 DEBUG   SenderThread:15860 [sender.py:send():303] send: files
+2023-04-03 15:37:48,167 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file media\graph\graph_summary_0b956f82c57076b49cb3.graph.json with policy now
+2023-04-03 15:37:48,169 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:48,171 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:48,691 INFO    Thread-23 :15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\AppData\Local\Temp\tmpc1zxzaqjwandb\1446rytp-media/graph/graph_summary_0b956f82c57076b49cb3.graph.json
+2023-04-03 15:37:48,940 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:37:48,940 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\media\graph\graph_summary_0b956f82c57076b49cb3.graph.json
+2023-04-03 15:37:48,941 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\media\graph
+2023-04-03 15:37:48,941 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\media
+2023-04-03 15:37:49,952 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:50,593 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:37:50,595 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:37:50,598 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:37:50,598 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:50,601 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:50,602 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:50,605 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:50,605 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:50,608 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:50,962 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:37:50,962 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:37:51,965 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:52,403 INFO    Thread-24 :15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\AppData\Local\Temp\tmpc1zxzaqjwandb\dzsn1tm4-model-best.h5
+2023-04-03 15:37:53,990 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:54,984 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:37:54,984 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:37:54,997 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:37:56,018 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:37:56,406 INFO    Thread-29 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\fb\91b084577b540055ec7299a31aaa24
+2023-04-03 15:37:56,422 INFO    Thread-26 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\a3\3a84399bbe89e0320b7b3144c29ec5
+2023-04-03 15:37:56,437 INFO    Thread-27 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\21\81c35df2aca44852e265d23decf828
+2023-04-03 15:37:57,056 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:37:57,058 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:37:57,301 INFO    Thread-28 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\f6\476b6c3e3782976cd920832d523798
+2023-04-03 15:37:58,040 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:37:58,297 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY0ODU5', 'digest': '4986789669a693b68eea1d983c6a3425', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': None}, 'version': 'latest'}
+2023-04-03 15:37:58,298 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:37:58,299 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:58,304 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:58,304 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:58,307 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:58,307 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:37:58,310 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:37:59,053 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:00,068 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:00,069 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:00,069 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:00,069 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:00,069 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:00,071 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:00,791 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:00,791 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:00,907 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:38:02,093 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:02,399 INFO    Thread-34 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\05\b2984d34a47cd96332df73ac3add7a
+2023-04-03 15:38:02,416 INFO    Thread-31 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\e6\d0c4a0bba3923586ca08fcf495d142
+2023-04-03 15:38:02,450 INFO    Thread-32 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\dd\2e6f8da6c1a3181f1c34b5229e0706
+2023-04-03 15:38:02,652 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:02,655 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:03,109 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:03,348 INFO    Thread-33 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\70\c77c8ca339657cb0e8fb22f16252dc
+2023-04-03 15:38:04,384 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTA0', 'digest': '3d1baecc2966f565bc5a79ce09df3718', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY0ODU5', 'versionIndex': 0}}, 'version': 'latest'}
+2023-04-03 15:38:04,385 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:38:04,546 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:04,546 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:04,550 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:04,551 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:04,553 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:04,553 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:04,556 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:05,129 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:06,143 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:06,144 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\config.yaml
+2023-04-03 15:38:06,144 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:06,145 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:06,145 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:06,145 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:06,145 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:06,625 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:06,625 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:08,175 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:08,497 INFO    Thread-39 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\42\cd821096671785177342d56ea4c3b5
+2023-04-03 15:38:08,532 INFO    Thread-36 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ab\c1dbebccf2f21c27a085e0bc58481e
+2023-04-03 15:38:08,601 INFO    Thread-37 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\d6\3db016a7bdd781537d6c803e55b52d
+2023-04-03 15:38:08,812 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:08,815 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:09,184 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:09,336 INFO    Thread-38 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\0e\ddd04a7d95e5c09f89fc5e60b155a4
+2023-04-03 15:38:10,195 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTU3', 'digest': 'f0cace49f16309fd28f1755036c37d29', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTA0', 'versionIndex': 1}}, 'version': 'latest'}
+2023-04-03 15:38:10,195 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:10,196 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:10,200 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:10,201 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:10,201 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:10,203 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:10,204 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:10,207 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:11,213 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:12,225 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:12,225 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:12,225 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:38:12,225 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:38:12,226 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:12,226 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:12,227 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:12,227 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:12,625 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:12,626 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:13,842 INFO    Thread-44 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\b8\43ce0064ff98bf8378700d5a988fe1
+2023-04-03 15:38:13,842 INFO    Thread-41 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\c1\ffb263d1aa97d2eabfb9e8f790390e
+2023-04-03 15:38:13,871 INFO    Thread-42 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\40\05125b0138b93dbf0161a75404a6c1
+2023-04-03 15:38:14,250 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:14,819 INFO    Thread-43 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\f9\2be944992dd22ae3f784d86cf02e37
+2023-04-03 15:38:14,822 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:14,823 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:15,255 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:15,741 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTk0', 'digest': '97c71ca8da1734a6a70e6be83924862c', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTU3', 'versionIndex': 2}}, 'version': 'latest'}
+2023-04-03 15:38:15,741 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:15,742 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:15,747 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:15,748 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:15,751 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:15,752 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:15,755 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:16,265 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:16,265 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:18,292 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:18,292 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:18,293 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:38:18,293 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:38:18,293 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:18,293 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:18,294 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:18,294 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:18,681 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:18,681 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:19,564 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:38:19,962 INFO    Thread-46 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ad\09192cba692814c69541d6945dc787
+2023-04-03 15:38:19,981 INFO    Thread-49 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\02\b89f518ca1fe2326cd78815fb12c87
+2023-04-03 15:38:19,987 INFO    Thread-47 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\b9\6ca9c0d66562ea5c0516a6bd8fe36f
+2023-04-03 15:38:20,321 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:20,586 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:20,588 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:20,897 INFO    Thread-48 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\5e\502d9213f19ab6f869482c8bb230a3
+2023-04-03 15:38:21,329 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:21,825 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1MDYz', 'digest': 'c2bf6cbe5fa34677f4cb92f954d57f05', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY0OTk0', 'versionIndex': 3}}, 'version': 'latest'}
+2023-04-03 15:38:21,825 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:38:21,993 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:21,993 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:21,996 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:21,996 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:21,999 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:22,000 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:22,002 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:22,343 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:24,360 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:24,361 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:24,361 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:24,362 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:24,362 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:24,362 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:25,056 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:25,057 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:26,294 INFO    Thread-51 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ee\3763b5559367ffff80ef0364a916de
+2023-04-03 15:38:26,323 INFO    Thread-54 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\9c\681341ea74a923e3b031a2bae49460
+2023-04-03 15:38:26,323 INFO    Thread-52 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\43\1cfffcb66ccc853baa9e82d9104b4c
+2023-04-03 15:38:26,388 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:26,973 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:26,975 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:27,239 INFO    Thread-53 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\19\ba2dd94f91d02447fc0ea68bb19fab
+2023-04-03 15:38:27,391 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:28,241 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1MTA5', 'digest': '166df85d60a22fd6ce2efa3dd2835ef4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1MDYz', 'versionIndex': 4}}, 'version': 'latest'}
+2023-04-03 15:38:28,242 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:28,243 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:28,247 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:28,250 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:28,253 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:28,254 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:28,256 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:28,401 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:30,424 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:30,424 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:30,424 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:30,425 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:30,425 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:30,425 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:31,046 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:31,047 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:32,280 INFO    Thread-59 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\9b\df6599bac7b429543d91a6b8af52b9
+2023-04-03 15:38:32,304 INFO    Thread-56 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\bf\30cd5bac304805507f940fb3ed569e
+2023-04-03 15:38:32,322 INFO    Thread-57 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\05\cc4297979a72f88db7fe3951573c30
+2023-04-03 15:38:32,467 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:33,195 INFO    Thread-58 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\0d\c17ad9b2c284aecc6934e0bed09d1a
+2023-04-03 15:38:34,255 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1MTY3', 'digest': 'bf8c51dcbbeab42983888717d62629dd', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1MTA5', 'versionIndex': 5}}, 'version': 'latest'}
+2023-04-03 15:38:34,648 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:34,648 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:34,649 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:34,650 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:34,656 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:34,657 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:34,673 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:34,673 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:34,676 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:35,530 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:35,530 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:35,990 DEBUG   SystemMonitor:15860 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-04-03 15:38:35,992 DEBUG   SenderThread:15860 [sender.py:send():303] send: stats
+2023-04-03 15:38:36,549 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:37,013 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:38:37,013 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:38:38,560 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:38,560 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:38,561 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:39,573 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:39,573 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:38:39,574 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:38:39,574 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:39,575 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:39,575 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:39,575 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:39,997 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:39,997 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:40,594 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:41,318 INFO    Thread-64 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\6f\e0707dd8cabc83d6ef46f4028c269d
+2023-04-03 15:38:41,325 INFO    Thread-61 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\28\67c1b3b67f331ff027addc109e61cc
+2023-04-03 15:38:41,365 INFO    Thread-62 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\4c\bc94768508702b60feb9e7c8cf2fd4
+2023-04-03 15:38:42,200 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:42,204 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:42,264 INFO    Thread-63 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\56\02c7951625a4db74258a95fab9a680
+2023-04-03 15:38:42,617 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:43,217 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1MjMw', 'digest': 'b0057a493d9d509f6f3414e456c9c591', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1MTY3', 'versionIndex': 6}}, 'version': 'latest'}
+2023-04-03 15:38:43,217 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:43,217 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:43,220 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:43,221 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:43,223 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:43,223 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:43,225 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:43,624 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:44,636 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:45,644 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:38:45,645 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:38:45,646 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:45,646 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:45,647 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:38:46,286 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:46,287 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:46,652 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:47,557 INFO    Thread-69 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\1b\b83813b5536e90b9a131d09015754c
+2023-04-03 15:38:47,569 INFO    Thread-66 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\63\0dd219e67de280c71074cc7348f038
+2023-04-03 15:38:47,574 INFO    Thread-67 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\64\03e590a4acb2996abba49a1dde501f
+2023-04-03 15:38:48,241 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:48,244 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:48,682 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:48,682 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:49,029 INFO    Thread-68 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\10\773b1539d6f1bbe8499695ba28f1cd
+2023-04-03 15:38:49,958 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1Mjgy', 'digest': 'fecc21b6301f5fcb330910821af7b499', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1MjMw', 'versionIndex': 7}}, 'version': 'latest'}
+2023-04-03 15:38:49,959 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:49,960 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:49,964 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:49,966 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:49,969 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:49,969 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:49,972 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:50,701 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:50,702 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:38:51,714 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate15438816047322173686
+2023-04-03 15:38:51,714 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:38:51,715 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:38:51,715 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:38:52,228 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:38:52,228 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:38:52,588 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:38:52,589 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:38:52,730 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:53,854 INFO    Thread-74 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\1f\70226efb316f50b64a293dc247e0ea
+2023-04-03 15:38:53,901 INFO    Thread-71 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\1c\f0d2848c28929b57123f2890d026af
+2023-04-03 15:38:53,922 INFO    Thread-72 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\45\1ccf55d7095efbcbc4830c956ad121
+2023-04-03 15:38:54,779 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:54,909 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:54,911 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:38:54,946 INFO    Thread-73 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\69\b88f7b96f7d66a866e0b555ed20ddc
+2023-04-03 15:38:55,783 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:38:55,944 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1MzI4', 'digest': 'ce2bdf90f20e8af05c58329942184c5b', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1Mjgy', 'versionIndex': 8}}, 'version': 'latest'}
+2023-04-03 15:38:55,944 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:38:55,944 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:55,949 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:55,950 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:55,954 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:55,954 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:38:55,957 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:38:56,792 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:38:56,793 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:01,515 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:01,516 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate1224482737180317460
+2023-04-03 15:39:01,517 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:01,517 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:01,518 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:39:02,329 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:02,329 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:02,524 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:03,711 INFO    Thread-79 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\fb\aea3f1620f84ec97a81f67c402964d
+2023-04-03 15:39:03,724 INFO    Thread-76 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ba\4a7dd9aa30783b9cece9d17683efb8
+2023-04-03 15:39:03,749 INFO    Thread-77 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\3d\4cf99ff5664a242a133d8d0bec14df
+2023-04-03 15:39:04,276 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:04,279 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:04,580 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:04,580 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:04,736 INFO    Thread-78 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\72\0cf7343c08261b4c95170c04f34ac8
+2023-04-03 15:39:05,814 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NDI5', 'digest': '77c665b607e8c3e8c9f5ff26f4beab15', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1MzI4', 'versionIndex': 9}}, 'version': 'latest'}
+2023-04-03 15:39:05,815 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:05,816 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:05,818 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:05,818 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:05,820 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:05,821 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:05,825 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:05,999 DEBUG   SenderThread:15860 [sender.py:send():303] send: stats
+2023-04-03 15:39:06,601 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:06,602 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:07,541 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:39:07,542 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:39:07,605 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate2022518126546020616
+2023-04-03 15:39:07,607 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:07,607 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:07,608 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:39:08,625 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate2022518126546020616
+2023-04-03 15:39:08,626 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:08,627 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:08,627 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:39:08,628 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:08,628 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:39:08,633 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:08,634 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_moved():300] file/dir moved: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate2022518126546020616 -> C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:08,634 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:08,635 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:08,636 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:09,942 INFO    Thread-84 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\b3\d11facd2dceeb0b4fbbb1273506d4d
+2023-04-03 15:39:10,041 INFO    Thread-82 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\05\8f53981c9dc387b6b57fb497ce4fb7
+2023-04-03 15:39:10,063 INFO    Thread-81 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ea\b45c19ba25efd736c7d2e860ee4b77
+2023-04-03 15:39:10,685 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:12,090 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:12,093 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:12,206 INFO    Thread-83 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\3e\965f3dcaf8622d37b122f36f2930cd
+2023-04-03 15:39:12,710 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:13,176 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NDg0', 'digest': 'bc47c22f69d522fc55d3d7450f9884d8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NDI5', 'versionIndex': 10}}, 'version': 'latest'}
+2023-04-03 15:39:13,178 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:13,178 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:13,182 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:13,183 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:13,186 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:13,187 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:13,189 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:13,722 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:14,729 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:15,765 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate15400279750161365608
+2023-04-03 15:39:15,766 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:15,766 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:15,767 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:39:16,660 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:16,661 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:16,773 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:17,986 INFO    Thread-89 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\2e\4f2814f4e11bf0cefabd4b5875b7f2
+2023-04-03 15:39:17,996 INFO    Thread-86 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\6b\5293f2a281bbeab6478d7b3f6a9912
+2023-04-03 15:39:18,024 INFO    Thread-87 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\0c\c2327829d1a90f7152f613f1a7c4a0
+2023-04-03 15:39:18,794 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:18,845 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:18,847 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:18,858 INFO    Thread-88 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\8c\85f4b1e47b6c854ecccb69aab5c25a
+2023-04-03 15:39:19,797 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:20,001 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NTUx', 'digest': '9aa3d969fec274c2d42331572c45012d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NDg0', 'versionIndex': 11}}, 'version': 'latest'}
+2023-04-03 15:39:20,002 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:20,002 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:20,006 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:20,006 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:20,008 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:20,010 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:20,012 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:20,807 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:20,808 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:21,834 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate3543565503359231069
+2023-04-03 15:39:21,835 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:21,835 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:21,836 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:39:22,743 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:39:22,743 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:39:22,817 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:22,852 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:22,932 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:24,129 INFO    Thread-94 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\be\b60e49abae3b242967dfdc2664ddb4
+2023-04-03 15:39:24,145 INFO    Thread-91 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\59\8d628b3c63cc24fc030fc16e62ea31
+2023-04-03 15:39:24,166 INFO    Thread-92 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\7b\e1f4128d3f349f915bffb56570906f
+2023-04-03 15:39:24,660 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:24,661 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:24,872 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:24,872 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:25,069 INFO    Thread-93 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\81\015bfe4f5b9acbbc8be21edb11fe2b
+2023-04-03 15:39:26,095 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NjE2', 'digest': '5553879b6f14ca0ee6a5185d6278eaf9', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NTUx', 'versionIndex': 12}}, 'version': 'latest'}
+2023-04-03 15:39:26,096 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:26,097 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:26,099 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:26,100 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:26,102 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:26,103 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:26,107 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:26,900 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:26,900 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:27,961 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate13324682076735807959
+2023-04-03 15:39:27,963 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:27,963 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:27,964 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:39:28,891 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:28,892 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:28,974 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:30,225 INFO    Thread-99 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\bd\babf39bd7c5a15ecce08e59c734194
+2023-04-03 15:39:30,265 INFO    Thread-96 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\bb\b23c2e0e395039453734e18c339f50
+2023-04-03 15:39:30,290 INFO    Thread-97 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\50\276fa7455abebd1c57239212697a01
+2023-04-03 15:39:30,870 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:30,872 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:30,990 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:30,991 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:31,094 INFO    Thread-98 :15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\54\019cb27e79106b33106435d6210404
+2023-04-03 15:39:32,071 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NjY4', 'digest': 'eeb810d844e1f5b344d502e9938a520f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NjE2', 'versionIndex': 13}}, 'version': 'latest'}
+2023-04-03 15:39:32,072 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:32,073 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:32,076 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:32,077 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:32,080 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:32,081 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:32,084 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:33,014 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:33,015 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:34,025 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:34,025 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:34,026 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:34,026 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:34,027 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:35,039 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:35,039 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:39:35,039 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:39:35,039 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:35,191 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:35,192 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:36,675 INFO    Thread-104:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\18\ec1bb141d6289ab76f30f782d140ac
+2023-04-03 15:39:36,676 INFO    Thread-101:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\01\ce2aba2957e8f0f51f19e88a81dd2f
+2023-04-03 15:39:36,736 INFO    Thread-102:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\03\3dd725fb5ee6c31e39da0dfdc3e2d3
+2023-04-03 15:39:37,060 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:37,266 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:37,269 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:37,644 INFO    Thread-103:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\72\0a9cf2009583ab78c49d52a8fcfca7
+2023-04-03 15:39:37,943 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:39:38,063 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:38,566 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1Njk5', 'digest': '8b3788b7c8c33bb379e204312d091dd5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NjY4', 'versionIndex': 14}}, 'version': 'latest'}
+2023-04-03 15:39:38,566 DEBUG   SenderThread:15860 [sender.py:send():303] send: stats
+2023-04-03 15:39:38,568 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:38,568 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:38,572 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:38,573 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:38,576 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:38,576 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:38,579 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:38,579 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:39:39,071 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:41,086 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:41,086 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:41,087 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\saved_model.pb
+2023-04-03 15:39:41,087 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\keras_metadata.pb
+2023-04-03 15:39:41,088 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:41,088 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:41,088 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:41,089 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:41,292 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:41,292 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:42,671 INFO    Thread-109:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\19\1bf370e08231e2e7a968e554ad2a8f
+2023-04-03 15:39:42,679 INFO    Thread-106:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\d8\331afe89756f2af3017ae8766660a6
+2023-04-03 15:39:42,701 INFO    Thread-107:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\4d\836ff7b2b7a5798d9c6c9d4a0097e0
+2023-04-03 15:39:43,122 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:43,444 INFO    Thread-108:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\35\2c95b49beec45d52c5a37dc651be3a
+2023-04-03 15:39:43,977 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:43,980 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:44,132 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:44,412 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1NzYz', 'digest': 'd0e386abf118986caebb3590a4bb8494', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1Njk5', 'versionIndex': 15}}, 'version': 'latest'}
+2023-04-03 15:39:44,413 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:44,414 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:44,417 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:44,418 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:44,421 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:44,421 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:44,424 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:45,142 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:47,173 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:47,174 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:47,174 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:47,175 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:47,175 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:47,175 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:47,672 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:47,673 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:48,981 INFO    Thread-114:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\05\c4d6bb829fc172f5a5e88833662a32
+2023-04-03 15:39:49,010 INFO    Thread-111:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ba\b8e36c8976721c5e6655e9bd5db052
+2023-04-03 15:39:49,149 INFO    Thread-112:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\40\0e69b5531c414488235f319f96cdf3
+2023-04-03 15:39:49,204 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:49,385 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:49,388 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:49,857 INFO    Thread-113:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\b9\72b0fd21261cdf95350da33653a455
+2023-04-03 15:39:50,218 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:50,738 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1ODEz', 'digest': 'afbf207a5b2ec9c941c2566d835ab2ff', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1NzYz', 'versionIndex': 16}}, 'version': 'latest'}
+2023-04-03 15:39:50,739 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:50,740 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:50,743 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:50,744 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:50,746 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:50,747 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:50,750 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:51,226 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:52,239 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:52,240 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:52,240 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:52,241 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:52,241 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:52,889 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:52,889 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:53,253 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:53,787 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:39:54,181 INFO    Thread-119:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\7d\ce8123b24468f0df7cd6f1390369ba
+2023-04-03 15:39:54,184 INFO    Thread-116:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\83\ae6d9e920e521431eb99cc58e63ad2
+2023-04-03 15:39:54,234 INFO    Thread-117:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\6b\5f0c10c0e7000f7453aee467506d4d
+2023-04-03 15:39:54,762 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:54,764 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:39:54,992 INFO    Thread-118:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\9b\a678f4630a6b3b692697c292b22c30
+2023-04-03 15:39:55,265 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:55,266 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:39:55,908 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1ODY1', 'digest': '1db4413b8f67ea30534359730305cda6', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1ODEz', 'versionIndex': 17}}, 'version': 'latest'}
+2023-04-03 15:39:55,908 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:39:56,080 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:39:56,080 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:56,083 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:56,084 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:56,087 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:56,087 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:39:56,089 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:39:56,274 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:39:57,282 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:39:58,290 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:39:58,290 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:39:58,291 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:39:58,291 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:39:58,292 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:39:59,020 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:39:59,020 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:39:59,302 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:00,289 INFO    Thread-121:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\86\4b037e490d6527c8e7e13e7d54bf12
+2023-04-03 15:40:00,305 INFO    Thread-122:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\f5\620d8540e8b50fcd0519a40d306d27
+2023-04-03 15:40:00,316 INFO    Thread-124:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\f1\3074bbdfc9306e2db6240ef19561ee
+2023-04-03 15:40:01,075 INFO    Thread-123:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\cf\3b520783969784f4dd4e72706a4390
+2023-04-03 15:40:01,339 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:01,368 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:01,370 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:02,099 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1OTE0', 'digest': '4566adfd65522953b26bbb55a6fc57d9', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1ODY1', 'versionIndex': 18}}, 'version': 'latest'}
+2023-04-03 15:40:02,100 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:40:02,100 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:02,103 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:02,103 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:02,106 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:02,106 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:02,110 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:02,344 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:02,344 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:40:03,352 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:04,364 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:40:04,364 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:40:04,365 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:40:04,365 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:40:04,365 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:40:05,239 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:40:05,239 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:40:05,371 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:06,502 INFO    Thread-129:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\7e\521c0f0c7c3c1eb6435725d7e5d6a1
+2023-04-03 15:40:06,530 INFO    Thread-126:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\cd\0316a2d1db1e0bbff826163c89a063
+2023-04-03 15:40:06,613 INFO    Thread-127:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\3f\ff7641f895907280a8664866686fff
+2023-04-03 15:40:07,162 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:07,164 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:07,309 INFO    Thread-128:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\41\6bcb70b461911da991728925703644
+2023-04-03 15:40:07,392 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:07,392 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:40:08,262 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY1OTc4', 'digest': 'c0d794557bddc99699918619e37f14b4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1OTE0', 'versionIndex': 19}}, 'version': 'latest'}
+2023-04-03 15:40:08,263 DEBUG   SenderThread:15860 [sender.py:send():303] send: stats
+2023-04-03 15:40:08,264 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:40:08,264 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:08,267 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:08,267 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:08,269 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:08,270 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:08,272 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:08,401 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:09,415 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:10,422 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:40:10,423 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:40:10,423 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:40:10,423 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:40:10,425 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:40:11,090 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-03 15:40:11,090 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: stop_status
+2023-04-03 15:40:11,130 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:40:11,260 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:40:11,431 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:12,524 INFO    Thread-134:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\0d\3afade9ee5fd1e997e0c0a8572a5b5
+2023-04-03 15:40:12,577 INFO    Thread-131:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ce\cbe1dc7388f088a168f7b9d641a9fa
+2023-04-03 15:40:12,610 INFO    Thread-132:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\5f\b9c48da3bbd8983198a6b293e96f40
+2023-04-03 15:40:13,318 INFO    Thread-133:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\68\4e71962d81eba838fe529f2cf7c08b
+2023-04-03 15:40:13,462 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:13,793 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:13,796 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:14,238 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY2MDM3', 'digest': '7cbc306f0c11ac4ffcb0779ad24ad9f0', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY1OTc4', 'versionIndex': 20}}, 'version': 'latest'}
+2023-04-03 15:40:14,240 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:40:14,241 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:14,244 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:14,245 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:14,247 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:14,248 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:14,251 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:14,466 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:14,467 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:40:15,480 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:17,561 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:17,562 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate7541716469059083616
+2023-04-03 15:40:17,562 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:40:17,563 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:40:17,563 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:40:18,525 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: log_artifact
+2023-04-03 15:40:18,525 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: log_artifact
+2023-04-03 15:40:19,593 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:19,831 INFO    Thread-139:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\23\7130c2cdf490fc2e8c7c220766cf96
+2023-04-03 15:40:19,860 INFO    Thread-136:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\ca\33ced9733789b44870d2ccaa114ddd
+2023-04-03 15:40:19,982 INFO    Thread-137:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\2b\4ed686e5e0399a0e41e9ed9a51a82a
+2023-04-03 15:40:20,538 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:20,540 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-03 15:40:20,600 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:40:20,730 INFO    Thread-138:15860 [upload_job.py:push():101] Uploaded file C:\Users\ucesvpm\.cache\wandb\artifacts\obj\md5\9e\c72d2684fc680d1addb5ee20550009
+2023-04-03 15:40:21,606 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5
+2023-04-03 15:40:21,674 INFO    SenderThread:15860 [sender.py:send_request_log_artifact():1222] logged artifact model-splendid-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDEyNzY2MDk2', 'digest': '9a548582b47b1509a60b1267da03217a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMTc0NDI2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEyNzY2MDM3', 'versionIndex': 21}}, 'version': 'latest'}
+2023-04-03 15:40:21,675 DEBUG   SenderThread:15860 [sender.py:send():303] send: history
+2023-04-03 15:40:21,675 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:21,679 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:21,679 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:21,683 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:21,684 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:21,687 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:22,609 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:23,629 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:23,629 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate7270766899480522552
+2023-04-03 15:40:23,630 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:40:23,630 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:40:23,630 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp
+2023-04-03 15:40:24,035 DEBUG   SenderThread:15860 [sender.py:send():303] send: telemetry
+2023-04-03 15:40:24,036 DEBUG   SenderThread:15860 [sender.py:send():303] send: exit
+2023-04-03 15:40:24,036 INFO    SenderThread:15860 [sender.py:send_exit():442] handling exit code: 1
+2023-04-03 15:40:24,037 INFO    SenderThread:15860 [sender.py:send_exit():444] handling runtime: 168
+2023-04-03 15:40:24,041 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:24,042 INFO    SenderThread:15860 [sender.py:send_exit():450] send defer
+2023-04-03 15:40:24,042 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,042 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 0
+2023-04-03 15:40:24,043 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,043 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-04-03 15:40:24,043 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 1
+2023-04-03 15:40:24,044 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,044 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 1
+2023-04-03 15:40:24,044 INFO    HandlerThread:15860 [system_monitor.py:finish():160] Stopping system monitor
+2023-04-03 15:40:24,045 DEBUG   SystemMonitor:15860 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-04-03 15:40:24,045 DEBUG   SystemMonitor:15860 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-04-03 15:40:24,047 INFO    HandlerThread:15860 [interfaces.py:finish():175] Joined cpu
+2023-04-03 15:40:24,047 INFO    HandlerThread:15860 [interfaces.py:finish():175] Joined disk
+2023-04-03 15:40:24,047 INFO    HandlerThread:15860 [interfaces.py:finish():175] Joined memory
+2023-04-03 15:40:24,048 INFO    HandlerThread:15860 [interfaces.py:finish():175] Joined network
+2023-04-03 15:40:24,048 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,049 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-04-03 15:40:24,049 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 2
+2023-04-03 15:40:24,050 DEBUG   SenderThread:15860 [sender.py:send():303] send: stats
+2023-04-03 15:40:24,051 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,051 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 2
+2023-04-03 15:40:24,051 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,051 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-04-03 15:40:24,051 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 3
+2023-04-03 15:40:24,052 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,052 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 3
+2023-04-03 15:40:24,053 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,053 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-04-03 15:40:24,053 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 4
+2023-04-03 15:40:24,053 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,053 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 4
+2023-04-03 15:40:24,054 DEBUG   SenderThread:15860 [sender.py:send():303] send: summary
+2023-04-03 15:40:24,057 INFO    SenderThread:15860 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-03 15:40:24,058 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,058 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-04-03 15:40:24,058 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 5
+2023-04-03 15:40:24,059 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,059 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 5
+2023-04-03 15:40:24,059 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,059 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-04-03 15:40:24,293 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 6
+2023-04-03 15:40:24,295 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:24,295 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 6
+2023-04-03 15:40:24,295 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:24,295 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-04-03 15:40:24,631 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\config.yaml
+2023-04-03 15:40:24,632 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:24,632 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:40:24,632 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_moved():300] file/dir moved: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate7270766899480522552 -> C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:40:24,633 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best
+2023-04-03 15:40:24,633 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables
+2023-04-03 15:40:24,633 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\assets
+2023-04-03 15:40:25,051 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-03 15:40:25,643 INFO    Thread-17 :15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:26,747 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 7
+2023-04-03 15:40:26,747 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: poll_exit
+2023-04-03 15:40:26,749 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:26,749 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 7
+2023-04-03 15:40:26,749 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:26,749 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-04-03 15:40:26,749 INFO    SenderThread:15860 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-04-03 15:40:27,664 INFO    SenderThread:15860 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:27,665 INFO    SenderThread:15860 [dir_watcher.py:finish():392] scan: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files
+2023-04-03 15:40:27,666 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\conda-environment.yaml conda-environment.yaml
+2023-04-03 15:40:27,666 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\config.yaml config.yaml
+2023-04-03 15:40:27,671 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best.h5 model-best.h5
+2023-04-03 15:40:27,676 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log output.log
+2023-04-03 15:40:27,677 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\requirements.txt requirements.txt
+2023-04-03 15:40:27,677 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-metadata.json wandb-metadata.json
+2023-04-03 15:40:27,677 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json wandb-summary.json
+2023-04-03 15:40:27,678 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\media\graph\graph_summary_0b956f82c57076b49cb3.graph.json media\graph\graph_summary_0b956f82c57076b49cb3.graph.json
+2023-04-03 15:40:27,678 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001 model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:40:27,679 INFO    SenderThread:15860 [dir_watcher.py:finish():406] scan save: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index model-best\variables\variables.index
+2023-04-03 15:40:27,679 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 8
+2023-04-03 15:40:27,680 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:27,680 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 8
+2023-04-03 15:40:27,680 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:27,680 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-04-03 15:40:27,680 INFO    SenderThread:15860 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-03 15:40:28,199 INFO    Thread-140:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\conda-environment.yaml
+2023-04-03 15:40:28,210 INFO    Thread-141:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\config.yaml
+2023-04-03 15:40:28,237 INFO    Thread-143:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\output.log
+2023-04-03 15:40:28,270 INFO    Thread-147:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.index
+2023-04-03 15:40:28,273 INFO    Thread-145:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\wandb-summary.json
+2023-04-03 15:40:28,299 INFO    Thread-144:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\requirements.txt
+2023-04-03 15:40:29,316 INFO    Thread-142:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\AppData\Local\Temp\tmpc1zxzaqjwandb\22bdbp9w-model-best.h5
+2023-04-03 15:40:29,727 INFO    Thread-146:15860 [upload_job.py:push():143] Uploaded file C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\files\model-best\variables\variables.data-00000-of-00001
+2023-04-03 15:40:29,941 INFO    Thread-16 :15860 [sender.py:transition_state():463] send defer: 9
+2023-04-03 15:40:29,942 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:29,942 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 9
+2023-04-03 15:40:29,942 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:29,943 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-04-03 15:40:29,943 INFO    SenderThread:15860 [file_pusher.py:join():173] waiting for file pusher
+2023-04-03 15:40:29,943 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 10
+2023-04-03 15:40:29,943 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:29,943 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 10
+2023-04-03 15:40:29,943 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:29,943 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-04-03 15:40:30,097 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 11
+2023-04-03 15:40:30,098 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: keepalive
+2023-04-03 15:40:30,099 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:30,099 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 11
+2023-04-03 15:40:30,099 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:30,099 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-04-03 15:40:30,099 INFO    SenderThread:15860 [sender.py:transition_state():463] send defer: 12
+2023-04-03 15:40:30,100 DEBUG   SenderThread:15860 [sender.py:send():303] send: final
+2023-04-03 15:40:30,101 DEBUG   SenderThread:15860 [sender.py:send():303] send: footer
+2023-04-03 15:40:30,101 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: defer
+2023-04-03 15:40:30,101 INFO    HandlerThread:15860 [handler.py:handle_request_defer():162] handle defer: 12
+2023-04-03 15:40:30,101 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: defer
+2023-04-03 15:40:30,101 INFO    SenderThread:15860 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-04-03 15:40:30,104 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-03 15:40:30,104 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: poll_exit
+2023-04-03 15:40:30,105 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: server_info
+2023-04-03 15:40:30,105 DEBUG   SenderThread:15860 [sender.py:send_request():317] send_request: server_info
+2023-04-03 15:40:30,108 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: get_summary
+2023-04-03 15:40:30,111 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: sampled_history
+2023-04-03 15:40:30,276 DEBUG   HandlerThread:15860 [handler.py:handle_request():139] handle_request: shutdown
+2023-04-03 15:40:30,276 INFO    HandlerThread:15860 [handler.py:finish():814] shutting down handler
+2023-04-03 15:40:31,107 INFO    WriterThread:15860 [datastore.py:close():279] close: C:\Users\ucesvpm\OneDrive - University College London\PhD Project\Data Analytics\Time Series Clustering\Time Series Clustering\SHS-DeepClustering\wandb\run-20230403_153734-5d15zy9t\run-5d15zy9t.wandb
+2023-04-03 15:40:31,280 INFO    SenderThread:15860 [sender.py:finish():1331] shutting down sender
+2023-04-03 15:40:31,280 INFO    SenderThread:15860 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-03 15:40:31,280 INFO    SenderThread:15860 [file_pusher.py:join():173] waiting for file pusher

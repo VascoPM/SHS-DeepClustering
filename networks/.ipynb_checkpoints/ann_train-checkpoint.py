@@ -26,8 +26,14 @@ def get_optimizer(lr, optimizer):
     if optimizer.lower() == "sgd":
         return tf.keras.optimizers.SGD(learning_rate=lr, momentum=0.9, nesterov=True)
 
-# Exponential Decay Learning Rate Scheduler, as examplified in Hands-On-ML 2ndEd (page 362)    
-def exponential_decay(lr_initial, steps):
+# # Exponential Decay Learning Rate Scheduler, as examplified in Hands-On-ML 2ndEd (page 362)    
+# def exponential_decay(lr_initial, steps):
+#     def exponential_decay_fn (epoch):
+#         return lr_initial * 0.1 ** (epoch/steps)
+#     return exponential_decay_fn
+
+# Exponential Decay Learning Rate Scheduler, see notebook   
+def exponential_decay(lr_initial, decay_rate, total_epochs):
     def exponential_decay_fn (epoch):
-        return lr_initial * 0.1 ** (epoch/steps)
+        return lr_initial * decay_rate ** (epoch/total_epochs)
     return exponential_decay_fn

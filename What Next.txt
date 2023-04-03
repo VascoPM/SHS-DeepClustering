@@ -1,8 +1,11 @@
 # WHAT TO TRY:
-    - New Error levels very high (new dataset):
-        - Check if it's a dataset issue (how does pW compare with manual_zcore?)
-        - Check if Exponential Decay Lr is faulty
-        
+    - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
+        - lstm_ae: Rwanda [TBD], Kenya [TBD]
+        - cnn_ConvEmb: Rwanda [TBD], Kenya [TBD]    
+        - cnn_AE: Rwanda [TBD], Kenya [TBD]
+        - fc_n2d: Rwanda [TBD], Kenya [TBD]        
+    
+    
 # Idea:
 
 Baseline comparisson strategy:

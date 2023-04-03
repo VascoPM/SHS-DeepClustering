@@ -37,6 +37,9 @@ def sweep_config(name, window_len, latent_layer_size):
             'min': 0.00001, 
             'max': 0.0001, 
         },
+        'lr_decay': {
+            'value': 0.01
+        },
         'batch_size': {
             # integers between 2 and 256
             # with evenly-distributed logarithms 
@@ -47,9 +50,10 @@ def sweep_config(name, window_len, latent_layer_size):
         }
     }
     sweep_config['parameters'] = parameters_dict
-
    
     return sweep_config
+
+
 
 def model(window_length = 90, latent_layer_size = 25, activation_fn = 'SELU'):
     
