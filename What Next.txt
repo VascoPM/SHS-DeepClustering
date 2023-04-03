@@ -1,9 +1,9 @@
 # WHAT TO TRY:
     - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
-        - lstm_ae: Rwanda [TBD], Kenya [TBD]
-        - cnn_ConvEmb: Rwanda [TBD], Kenya [TBD]    
-        - cnn_AE: Rwanda [TBD], Kenya [TBD]
-        - fc_n2d: Rwanda [TBD], Kenya [TBD]        
+        - lstm_ae: Rwanda [TBC], Kenya [TBC]
+        - cnn_ConvEmb: Rwanda [TBD], Kenya [TBC]    
+        - cnn_AE: Rwanda [TBC], Kenya [TBC]
+        - fc_n2d: Rwanda [TBC], Kenya [TBC]        
     
     
 # Idea:
