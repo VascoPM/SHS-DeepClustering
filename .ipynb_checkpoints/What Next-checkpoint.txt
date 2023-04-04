@@ -1,10 +1,18 @@
 # WHAT TO TRY:
     - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
-        - lstm_ae: Rwanda [TBC], Kenya [TBC]
-        - cnn_ConvEmb: Rwanda [TBD], Kenya [TBC]    
-        - cnn_AE: Rwanda [TBC], Kenya [TBC]
-        - fc_n2d: Rwanda [TBC], Kenya [TBC]        
-    
+        - lstm_ae: Kenya [TBC], Rwanda [TBC]
+        - cnn_ConvEmb: Kenya [TBC], Rwanda [TBC]    
+        - cnn_AE: Kenya [TBC], Rwanda [TBC]
+        - fc_n2d: Kenya [TBC], Rwanda [TBC]        
+    - DashBoards
+        - Improve data struture to upload only necessary stuff:
+            - Reconstructions-df
+            - MSE-df
+            - kMeans_centroids-df
+            - Clustering_Results-df
+    - Clustering Soltuions:
+        - Run Solutions with and without UMAP (save seperatly)
+        - Save kMeans centroids (on clustering space and the original space) 
     
 # Idea:
 

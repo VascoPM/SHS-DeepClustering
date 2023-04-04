@@ -1,0 +1,41 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-04-04T10:52:26.169107",
+    "startedAt": "2023-04-04T10:52:24.936590",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering/Clustering_ANN-Clust-Reconstruct.ipynb",
+    "root": "C:/Users/ucesvpm/OneDrive - University College London/PhD Project/Data Analytics/Time Series Clustering/Time Series Clustering/SHS-DeepClustering",
+    "git": {
+        "remote": "https://github.com/VascoPM/SHS-DeepClustering.git",
+        "commit": "d8732d64fe181dd8a823b33822c4734e8d2f83d2"
+    },
+    "email": "vasco.mergulhao.20@ucl.ac.uk",
+    "host": "CS00101149",
+    "username": "ucesvpm",
+    "executable": "C:\\Users\\ucesvpm\\Anaconda3\\envs\\TensorFlow_PhD\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1805.0,
+        "min": 0.0,
+        "max": 1805.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1805.0,
+            "min": 0.0,
+            "max": 1805.0
+        }
+    ],
+    "disk": {
+        "total": 476.32519149780273,
+        "used": 377.19136810302734
+    },
+    "memory": {
+        "total": 31.566776275634766
+    }
+}

@@ -44,7 +44,7 @@ def sweep_config(name, window_len, latent_layer_size):
         'learning_rate': {
             # a flat distribution between 0 and 0.1
             'distribution': 'log_uniform_values',
-            'min': 0.001,
+            'min': 0.0001,
             'max': 0.01,
           },
         'lr_decay': {
