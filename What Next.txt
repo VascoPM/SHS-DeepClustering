@@ -1,8 +1,13 @@
+# Check
+Check if paperspace CPU machines run faster.
+If yes, adapt clustering scritps to support gradient runs.
+
+
 # WHAT TO TRY:
     - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
         - lstm_ae: Kenya [Done], Rwanda [TBC]
         - cnn_ConvEmb: Kenya [Done], Rwanda [TBC]    
-        - cnn_AE: Kenya [TBC], Rwanda [TBC]
+        - cnn_AE: Kenya [Done], Rwanda [TBC]
         - fc_n2d: Kenya [TBC], Rwanda [TBC]        
     - DashBoards
         - Improve data struture to upload only necessary stuff:
