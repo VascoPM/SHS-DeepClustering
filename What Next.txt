@@ -1,25 +1,28 @@
-# Check
-Check if paperspace CPU machines run faster.
-If yes, adapt clustering scritps to support gradient runs.
-
-
 # WHAT TO TRY:
     - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
         - lstm_ae: Kenya [Done], Rwanda [TBC]
         - cnn_ConvEmb: Kenya [Done], Rwanda [TBC]    
         - cnn_AE: Kenya [Done], Rwanda [TBC]
         - fc_n2d: Kenya [TBC], Rwanda [TBC]        
+    - Clustering Soltuions:
+        - Run Solutions with and without UMAP:
+            - Baseline MBP: [0/4]
+            - Baseline kMeans: [0/4]
+            - LSTM-AE: [0/4]
+            - CNN-ConvEmb: [0/4]
+            - CNN-AE: [0/4]
+            - FC-N2D: [0/4]
+            
+            
     - DashBoards
         - Improve data struture to upload only necessary stuff:
             - Reconstructions-df
             - MSE-df
             - kMeans_centroids-df
-            - Clustering_Results-df
-    - Clustering Soltuions:
-        - Run Solutions with and without UMAP (save seperatly)
+            - Clustering_Results-df        
         - Save kMeans centroids (on clustering space and the original space) 
     
-# Idea:
+# Idea: [Done]
 
 Baseline comparisson strategy:
 Compare both the Recontruction Error and Clustering Validation against Mean Based Predict (MBP).
