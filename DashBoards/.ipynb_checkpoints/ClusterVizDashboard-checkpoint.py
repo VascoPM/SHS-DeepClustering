@@ -9,6 +9,7 @@ import os
 import glob
 import time
 import pandas as pd
+import polars as pl
 import numpy as np
 import plotly.graph_objects as go
 import json
@@ -26,12 +27,17 @@ from sklearn.preprocessing import StandardScaler
 # Generic functions used in Dashboard
 ###########################################################
 # Folder and File name Navigator Functions
-def retrive_sol_files (dataset_name):
-    extension = 'csv'
-    os.chdir(f"../../ModelResults/Clustering/{dataset_name}")
-    solution_files = glob.glob('*.{}'.format(extension))
-    os.chdir("../../../SHS-DeepClustering/DashBoards")
+
+# def retrive_sol_files (dataset_name):
+#     extension = 'csv'
+#     os.chdir(f"../../ModelResults/Clustering/Solutions/{dataset_name}")
+#     solution_files = glob.glob('*.{}'.format(extension))
+#     os.chdir("../../../../SHS-DeepClustering/DashBoards")
     
+#     return solution_files
+def retrive_sol_files (dataset_name):
+    file_path = f"../../ModelResults/Clustering/Solutions/{dataset_name}"
+    solution_files = next(os.walk(file_path), (None, None, []))[2] # https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
     return solution_files
 
 def retrive_AEmodel_options (sol_files):    
@@ -116,10 +122,9 @@ def retrive_SolNames_options (sol_files, AEmodel_type):
 # Navigating File Structure to find all available solutions
 # First, see list of Datasets used, defined by the solution folders
 
-Dataset_options = next(os.walk("../../ModelResults/Clustering"))[1] # https://stackoverflow.com/questions/973473/getting-a-list-of-all-subdirectories-in-the-current-directory?page=1&tab=scoredesc#tab-top
-if '.ipynb_checkpoints' in Dataset_options:
-    Dataset_options.remove('.ipynb_checkpoints')
-    
+file_path = f"../../ModelResults/Clustering/Solutions"
+Dataset_options = next(os.walk(file_path), (None, None, []))[1] # https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+     
 solution_files = retrive_sol_files (Dataset_options[0])
 # The following are just to initiate the variables (default values)
 AEmodels_options = retrive_AEmodel_options (solution_files)
@@ -131,12 +136,16 @@ SolNames_options = retrive_SolNames_options (solution_files, AEmodels_options[0]
 
 # Original Dataset Import 
 dataset_folder = "_".join(Dataset_options[0].split('_')[:-2])
-Data_orig = pd.read_csv(f'../../Data_Storage_Processing/Data/{dataset_folder}/{Dataset_options[0]}.csv')
+file_location = f'../../Data_Storage_Processing/Data/{dataset_folder}/{Dataset_options[0]}.csv'
+Data_orig = pl.read_csv(file_location).to_pandas()
+# Data_orig = pd.read_csv(f'../../Data_Storage_Processing/Data/{dataset_folder}/{Dataset_options[0]}.csv')
 used_cols = len(Data_orig.columns)-3
 window_col_names = Data_orig.columns[-used_cols:]
 
 # Default Reconstruction Solution
-Data_Sol = pd.read_csv(f'../../ModelResults/Clustering/{Dataset_options[0]}/{solution_files[0]}')
+file_location = f'../../ModelResults/Clustering/Solutions/{Dataset_options[0]}/{solution_files[0]}'
+Data_Sol = pl.read_csv(file_location).to_pandas()
+# Data_Sol = pd.read_csv(f'../../ModelResults/Clustering/Solutions/{Dataset_options[0]}/{solution_files[0]}')
 used_cols = len(Data_Sol.columns)-5
 clustering_cols = Data_Sol.columns[-used_cols:]
 min_cluster = Data_Sol[clustering_cols[-1]].min()
@@ -523,7 +532,9 @@ def update_RangeSlider(apply_click, clustering_solution, dataset_selected, solut
         sol_files = retrive_sol_files (dataset_selected)
         SolNames_options = retrive_SolNames_options (sol_files, AEmodel_selected)
         #load new solution
-        Data_Sol = pd.read_csv(f'../../ModelResults/Clustering/{dataset_selected}/{SolNames_options[solution_selected]}')
+        # Data_Sol = pd.read_csv(f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}')
+        file_location = f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}'
+        Data_Sol = pl.read_csv(file_location).to_pandas()
 
         #update dropdown options and values
         options = np.sort(Data_Sol[clustering_solution].unique())
@@ -557,10 +568,8 @@ def update_scatter_graph(n_clicks, clustering_solution, active_clusters, dataset
             sol_files = retrive_sol_files (dataset_selected)
             SolNames_options = retrive_SolNames_options (sol_files, AEmodel_selected)
             #load new solution
-            df_sol = pd.read_csv(f'../../ModelResults/Clustering/{dataset_selected}/{SolNames_options[solution_selected]}')
-                        
-            # Local df with relevant clustering solution
-            df_clusters = df_sol[['short_ID', 'window_ID', 'UMAP_V1', 'UMAP_V2', clustering_solution]]
+            file_location = f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}'
+            df_clusters = pl.read_csv(file_location, columns=['short_ID', 'window_ID', 'UMAP_V1', 'UMAP_V2', clustering_solution]).to_pandas()
 
             #########################
             # Actual Plot
@@ -577,8 +586,8 @@ def update_scatter_graph(n_clicks, clustering_solution, active_clusters, dataset
                 hovertemplate ='<b>Cluster: %{customdata[0]}</b><br>ID: %{customdata[1]}<br>Window: %{customdata[2]}<extra></extra>',
                 marker=dict(
                     color= df_clusters[clustering_solution],
-                    cmax = df_sol[clustering_solution].max(),
-                    cmin = df_sol[clustering_solution].min(),                
+                    cmax = df_clusters[clustering_solution].max(),
+                    cmin = df_clusters[clustering_solution].min(),                
                     colorscale= 'portland',  #turbo, rainbow, jet one of plotly colorscales
                     showscale= True    #set color equal to a variable
                 )
@@ -611,19 +620,16 @@ def update_scatter_graph(n_clicks, clustering_solution, active_clusters, dataset
             sol_files = retrive_sol_files (dataset_selected)
             SolNames_options = retrive_SolNames_options (sol_files, AEmodel_selected)
             #load new solution
-            df_sol = pd.read_csv(f'../../ModelResults/Clustering/{dataset_selected}/{SolNames_options[solution_selected]}')
-
-
-            # Local df with relevant clustering solution
-            df_clusters = df_sol[['short_ID', 'window_ID', 'UMAP_V1', 'UMAP_V2', clustering_solution]]
-
+            file_location = f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}'
+            df_clusters = pl.read_csv(file_location, columns=['short_ID', 'window_ID', 'UMAP_V1', 'UMAP_V2', clustering_solution]).to_pandas()
+ 
             # Filtering based Active Cluster Dropdown Values
             df_filtered = df_clusters[df_clusters[clustering_solution].isin(active_clusters)]
             df_NegativeFilter = df_clusters[~df_clusters[clustering_solution].isin(active_clusters)]
 
             #Calculating number of points highlighted (HP)
             filtered_points = len(df_filtered.index)
-            percentage_fp = (filtered_points / len(df_sol.index)) * 100
+            percentage_fp = (filtered_points / len(df_clusters.index)) * 100
             if percentage_fp >= 1:
                 percentage_fp = np.round(percentage_fp, 0)
             else:
@@ -657,8 +663,8 @@ def update_scatter_graph(n_clicks, clustering_solution, active_clusters, dataset
                 hovertemplate ='<b>Cluster: %{customdata[0]}</b><br>ID: %{customdata[1]}<br>Window: %{customdata[2]}<extra></extra>',
                 marker=dict(
                     color= df_filtered[clustering_solution],
-                    cmax = df_sol[clustering_solution].max(),
-                    cmin = df_sol[clustering_solution].min(),                
+                    cmax = df_clusters[clustering_solution].max(),
+                    cmin = df_clusters[clustering_solution].min(),                
                     colorscale= 'portland',  #turbo, rainbow, jet one of plotly colorscales
                     showscale= True    #set color equal to a variable
                 )
@@ -705,73 +711,64 @@ def placeholder_fig (message):
         )        
     return go.Figure(layout=layout)     
 
-# ######################################################    
-# # Update Selected IDs Graph
-# @app.callback(
-#     Output('selectedIDs-graph', 'figure'),
-#     Input('apply-button', 'n_clicks'), 
-#     Input('scatter-graph', 'selectedData'),
-#     State('dropdown-Dataset', 'value'),        
-# )
-# def update_AggIDs_graph(n_clicks, selectedData, dataset_selected):
-#     if (selectedData is None):
-#         #Placeholder plot
-#         return placeholder_fig('Make a Group Selection.')
+######################################################    
+# Update Selected IDs Graph
+@app.callback(
+    Output('selectedIDs-graph', 'figure'),
+    Input('apply-button', 'n_clicks'), 
+    Input('scatter-graph', 'selectedData'),
+    State('dropdown-Dataset', 'value'),        
+)
+def update_AggIDs_graph(n_clicks, selectedData, dataset_selected):
+    if (selectedData is None):
+        #Placeholder plot
+        return placeholder_fig('Make a Group Selection.')
     
-#     else:
-#         # Loading Relevant Dataset
-#         dataset_folder = "_".join(dataset_selected.split('_')[:-1])
-#         Data_orig = pd.read_csv(f'../Data/{dataset_folder}/{dataset_selected}.csv')
+    else:
+        # Un-Nesting selected points 
+        selected_ids = []
+        selected_windows = []
+        for p in selectedData['points']:
+            # Ignores Grey Points:
+            if "customdata" in p:
+                selected_ids.append(p['customdata'][1])
+                selected_windows.append(p['customdata'][2])
 
-#         # Un-Nesting selected points 
-#         selected_ids = []
-#         selected_windows = []
-#         for p in selectedData['points']:
-#             # Ignores Grey Points:
-#             if "customdata" in p:
-#                 selected_ids.append(p['customdata'][1])
-#                 selected_windows.append(p['customdata'][2])
-#         # Maintaining id to window order
-#         df_selected = pd.DataFrame(columns=['short_ID', 'window_ID'])        
-#         df_selected['short_ID'] =  selected_ids
-#         df_selected['window_ID'] =  selected_windows   
-#         # Filtering for selected points        
-#         cols = window_col_names.values.tolist()
-#         cols.append('short_ID')
-#         cols.append('window_ID')
-#         df_selected = df_selected.merge(Data_orig[cols], how = 'left', on=['short_ID', 'window_ID'])
+        # Loading Relevant Dataset
+        file_location = f'../../Data_Storage_Processing/Data/{dataset_folder}/{dataset_selected}.csv'
+        df_selected = pl.scan_csv(file_location).filter((pl.col("short_ID").is_in(selected_ids)) & (pl.col("window_ID").is_in(selected_windows))).fetch().to_pandas()
         
-#         # Figure Per Se
-#         fig = go.Figure()
-#         fig.add_trace(go.Scatter(x=window_col_names,
-#                         y=df_selected[window_col_names].mean(),
-#                         mode='lines',
-#                         line_color = 'rgba(100,100,255, 0.8)',         
-#                         name= f'Mean'
-#                         ))
-#         fig.add_trace(go.Scatter(x=window_col_names,
-#                         y=df_selected[window_col_names].median(),
-#                         mode='lines',
-#                         line_color = 'rgba(200,200,200, 0.8)',         
-#                         name= f'Median'
-#                         ))
-#         fig.update_layout(
-#             margin=dict(l=20, r=28, t=20, b=20),
-#             template= 'plotly_dark',
-#             height = 250,
-#             annotations=[go.layout.Annotation(
-#                 text= f'# Points:<br>{len(selected_ids)}',
-#                 font = {'size': 12},
-#                 align='left',
-#                 showarrow=False,
-#                 xref='paper',
-#                 yref='paper',
-#                 x=1.025,
-#                 y=0.7,
-#                 xanchor="left",
-#                 )]
-#         )
-#         return fig 
+        # Figure Per Se
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=window_col_names,
+                        y=df_selected[window_col_names].mean(),
+                        mode='lines',
+                        line_color = 'rgba(100,100,255, 0.8)',         
+                        name= f'Mean'
+                        ))
+        fig.add_trace(go.Scatter(x=window_col_names,
+                        y=df_selected[window_col_names].median(),
+                        mode='lines',
+                        line_color = 'rgba(200,200,200, 0.8)',         
+                        name= f'Median'
+                        ))
+        fig.update_layout(
+            margin=dict(l=20, r=28, t=20, b=20),
+            template= 'plotly_dark',
+            height = 250,
+            annotations=[go.layout.Annotation(
+                text= f'# Points:<br>{len(selected_ids)}',
+                font = {'size': 12},
+                align='left',
+                showarrow=False,
+                xref='paper',
+                yref='paper',
+                x=1.025,
+                y=0.7,
+                xanchor="left",
+                )]
+        )
+        return fig 
     
 ######################################################    
 # Update Clusters plot
@@ -796,15 +793,21 @@ def update_clusters_graph(n_clicks, clustering_solution, radio_option, active_cl
         sol_files = retrive_sol_files (dataset_selected)
         SolNames_options = retrive_SolNames_options (sol_files, AEmodel_selected)
         #load new solution
-        df_sol = pd.read_csv(f'../../ModelResults/Clustering/{dataset_selected}/{SolNames_options[solution_selected]}')
+        # df_sol = pd.read_csv(f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}')
+        file_location = f'../../ModelResults/Clustering/Solutions/{dataset_selected}/{SolNames_options[solution_selected]}'
+        # df_sol = pl.read_csv(file_location).to_pandas()
+        df_clusters = pl.read_csv(file_location, columns=['short_ID', 'window_ID', clustering_solution]).to_pandas()
+
         
         # Loading Relevant Dataset
         dataset_folder = "_".join(dataset_selected.split('_')[:-2])
-        Data_orig = pd.read_csv(f'../../Data_Storage_Processing/Data/{dataset_folder}/{dataset_selected}.csv')
+        # Data_orig = pd.read_csv(f'../../Data_Storage_Processing/Data/{dataset_folder}/{dataset_selected}.csv')
+        file_location = f'../../Data_Storage_Processing/Data/{dataset_folder}/{dataset_selected}.csv'
+        Data_orig = pl.read_csv(file_location).to_pandas()
         
 
         # Local df with relevant clustering solution
-        df_clusters = df_sol[['short_ID', 'window_ID', clustering_solution]]
+        # df_clusters = df_sol[['short_ID', 'window_ID', clustering_solution]]
         cols = window_col_names.values.tolist()
         cols.append('short_ID')
         cols.append('window_ID')
