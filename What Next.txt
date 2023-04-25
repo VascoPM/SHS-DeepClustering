@@ -3,7 +3,7 @@ Summary:
     - Keep running Random sweeps 
     - Run Clustering solutions on Gradient (The sripts should be working)
     - Update Dashboards to Polars optimization.
-    - New cluster center script, with MSE and soft-DTW barycenter.
+    - New cluster center script, with Euclidean, DTW, and soft-DTW barycenter.
 
 Details:
     - 10 Random Sweeps for new pW Rwanda and Kenya datasets:
