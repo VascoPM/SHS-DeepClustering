@@ -2,3 +2,4 @@ wandb/
 .ipynb_checkpoints
 artifacts/
 Clustering_VisualPairs.ipynb
+MapPlots/
